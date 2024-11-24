@@ -280,4 +280,128 @@ body {
   font-weight: 700;
   line-height: 43px;
   text-align: center;
+}
+
+.video {
+  background-color: #222222;
+  padding: 0 20px;
+  font-family: "Archivo", sans-serif;
+  color: white;
+  margin-top: 65%;
+  text-align: left;
+}
+.video--subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2.7999999523px;
+  color: #BDAC8D;
+  padding-top: 4em;
+  padding-bottom: 2.5em;
+}
+.video--title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+.video--text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #C2C2C2;
+  margin-bottom: 2em;
+}
+.video--content {
+  height: 300px;
+  width: 100%;
+  background-color: #E6E6E6;
+  margin-bottom: 2em;
+}
+.video--button {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2.7999999523px;
+  color: white;
+  background-color: #BDAC8D;
+  padding: 20px 50px;
+  margin-bottom: 3em;
+}
+
+.facilities {
+  font-family: "Old Standard TT", serif;
+  text-align: center;
+}
+.facilities--subtitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  color: #777777;
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+.facilities--title {
+  font-family: Old Standard TT;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+}
+.facilities__number {
+  position: relative;
+  font-family: "Archivo", sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 130px;
+  text-align: right;
+  color: rgba(34, 34, 34, 0.0392156863);
+  padding: 0.5em 30px;
+  padding-bottom: 0.8em;
+}
+.facilities__number--img {
+  position: absolute;
+  left: 10%;
+  bottom: 50px;
+}
+.facilities--title2 {
+  font-family: Old Standard TT;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #222222;
+  padding: 0 30px;
+  margin-bottom: 1em;
+}
+.facilities--text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  font-family: "Archivo", sans-serif;
+  color: #777777;
+  padding: 0 30px;
+  padding-right: 60px;
+  margin-bottom: 3em;
+}
+.facilities__dots {
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10em;
+  position: relative;
+}
+.facilities__dots--dot {
+  height: 10px;
+  width: 10px;
+  background-color: #EDEDED;
+  border-radius: 50%;
+}
+.facilities__dots--dot.color {
+  background-color: #BEAD8E;
 }/*# sourceMappingURL=styles.css.map */
