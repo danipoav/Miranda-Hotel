@@ -1,0 +1,39 @@
+.about {
+    padding: 30px 20px;
+
+    &--subtitle {
+        font-family: "Archivo", sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+        color: #777777;
+        margin-bottom: 30px;
+    }
+
+    &--title {
+        font-family: "Old Standard TT", serif;
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+
+    &--text {
+        font-family: "Archivo", sans-serif;
+        font-weight: 400;
+        color: #777777;
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 24px;
+    }
+
+    &--button {
+        background-color: #BDAC8D;
+        color: white;
+        font-weight: 700;
+        font-size: 14px;
+        padding: 20px 50px;
+        letter-spacing: 3px;
+        border: none;
+    }
+}

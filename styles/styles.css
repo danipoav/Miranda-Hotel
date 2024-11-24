@@ -108,6 +108,7 @@ body {
   margin-bottom: 20px;
   outline: none;
   padding: 10px 0;
+  font-size: 20px;
 }
 .header__form .button {
   color: white;
@@ -119,4 +120,40 @@ body {
   background-color: #BEAD8E;
   border: none;
   font-family: "Archivo", sans-serif;
+}
+
+.about {
+  padding: 30px 20px;
+}
+.about--subtitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #777777;
+  margin-bottom: 30px;
+}
+.about--title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+.about--text {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  color: #777777;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+.about--button {
+  background-color: #BDAC8D;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 20px 50px;
+  letter-spacing: 3px;
+  border: none;
 }/*# sourceMappingURL=styles.css.map */
