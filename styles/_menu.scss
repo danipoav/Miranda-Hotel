@@ -1,0 +1,109 @@
+.menu {
+    font-family: "Old Standard TT", serif;
+    position: relative;
+    padding: 0 20px;
+
+    &--donut {
+        position: absolute;
+        right: 0;
+        top: -100px;
+    }
+
+    &--subtitle {
+        font-family: "Archivo", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 15.23px;
+        letter-spacing: 2.799999952316284px;
+        text-align: left;
+        color: #777777;
+        margin-bottom: 1em;
+    }
+
+    &--title {
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 60px;
+        text-align: left;
+        color: #222222;
+        margin-bottom: 0.5em;
+    }
+
+    &__item {
+        display: flex;
+        margin-bottom: 1em;
+
+        &--image {
+            height: auto;
+            width: 300px;
+            background-color: #DBDBDB;
+        }
+
+        &__content {
+            padding-left: 30px;
+
+            &--title {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+                color: #222222;
+                margin-bottom: 0.5em;
+            }
+
+            &--text {
+                font-family: "Roboto", sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+            }
+        }
+    }
+
+    &__buttons {
+        text-align: end;
+        margin-bottom: 5em;
+        margin-top: 2em;
+
+        .button {
+            padding: 10px 15px;
+            background-color: #F8F8F8;
+            border: none;
+            outline: none;
+            font-size: 20px;
+
+            &.right {
+                color: white;
+                margin-left: 10px;
+                background-color: #BEAD8E;
+            }
+        }
+    }
+
+    &__image {
+        height: 350px;
+        width: 100%;
+        background-color: #EDEDED;
+    }
+
+    &__dots {
+        margin: 2em 0;
+        height: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+
+        &--dot {
+            height: 10px;
+            width: 10px;
+            background-color: #EDEDED;
+            border-radius: 50%;
+
+            &.active {
+                background-color: #BEAD8E;
+            }
+        }
+    }
+}

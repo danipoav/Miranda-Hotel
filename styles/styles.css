@@ -404,4 +404,125 @@ body {
 }
 .facilities__dots--dot.color {
   background-color: #BEAD8E;
+}
+
+.menu {
+  font-family: "Old Standard TT", serif;
+  position: relative;
+  padding: 0 20px;
+}
+.menu--donut {
+  position: absolute;
+  right: 0;
+  top: -100px;
+}
+.menu--subtitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  color: #777777;
+  margin-bottom: 1em;
+}
+.menu--title {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: left;
+  color: #222222;
+  margin-bottom: 0.5em;
+}
+.menu__item {
+  display: flex;
+  margin-bottom: 1em;
+}
+.menu__item--image {
+  height: auto;
+  width: 300px;
+  background-color: #DBDBDB;
+}
+.menu__item__content {
+  padding-left: 30px;
+}
+.menu__item__content--title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #222222;
+  margin-bottom: 0.5em;
+}
+.menu__item__content--text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.menu__buttons {
+  text-align: end;
+  margin-bottom: 5em;
+  margin-top: 2em;
+}
+.menu__buttons .button {
+  padding: 10px 15px;
+  background-color: #F8F8F8;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+.menu__buttons .button.right {
+  color: white;
+  margin-left: 10px;
+  background-color: #BEAD8E;
+}
+.menu__image {
+  height: 350px;
+  width: 100%;
+  background-color: #EDEDED;
+}
+.menu__dots {
+  margin: 2em 0;
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.menu__dots--dot {
+  height: 10px;
+  width: 10px;
+  background-color: #EDEDED;
+  border-radius: 50%;
+}
+.menu__dots--dot.active {
+  background-color: #BEAD8E;
+}
+
+.data {
+  font-family: "Roboto", sans-serif;
+  background-color: #222222;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+.data__item {
+  padding: 2em 0;
+}
+.data__item--title {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+}
+.data__item--title span {
+  font-size: 16px;
+}
+.data__item--subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.82px;
+  text-align: center;
+  color: #C2C2C2;
 }/*# sourceMappingURL=styles.css.map */
