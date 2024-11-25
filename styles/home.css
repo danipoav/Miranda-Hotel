@@ -632,6 +632,9 @@ body {
   color: #222222;
   padding-right: 6.5em;
 }
+.footer__contact--title.black {
+  padding-right: 3em;
+}
 .footer__contact--title span {
   font-size: 14px;
   font-weight: 400;
@@ -653,4 +656,4 @@ body {
   letter-spacing: -0.4799999893px;
   text-align: left;
   color: #222222;
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=home.css.map */

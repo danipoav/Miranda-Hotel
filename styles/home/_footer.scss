@@ -115,6 +115,10 @@
             color: #222222;
             padding-right: 6.5em;
 
+            &.black {
+                padding-right: 3em;
+            }
+
             span {
                 font-size: 14px;
                 font-weight: 400;
