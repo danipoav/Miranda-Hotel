@@ -1,0 +1,300 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cutive&family=Electrolize&family=Gurajada&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cutive&family=Electrolize&family=Gurajada&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cutive&family=Electrolize&family=Gurajada&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cutive&family=Electrolize&family=Gurajada&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.header {
+  position: relative;
+}
+.header__nav {
+  display: flex;
+  font-family: "Archivo", sans-serif;
+  padding: 20px 20px;
+  align-items: center;
+}
+.header__nav--menu {
+  margin-right: 40px;
+  height: 20px;
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.header__nav__logo, .header__nav__icons {
+  display: flex;
+  align-items: center;
+}
+.header__nav__logo {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  font-size: 10px;
+  padding: 6px 10px;
+  margin-right: 10px;
+}
+.header__nav__icons {
+  margin-left: auto;
+  gap: 20px;
+}
+.header__nav--title {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.header__nav--title h1 {
+  font-size: 12px;
+}
+.header__content {
+  background-color: #333333;
+  color: white;
+  padding: 80px 20px;
+}
+.header__content h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 5px;
+  padding-right: 80px;
+  margin-bottom: 1em;
+}
+.header__content h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+.header__content__links {
+  background-color: white;
+  color: #222222;
+  position: absolute;
+  text-align: center;
+  bottom: -1px;
+  padding: 15px 20px;
+  width: auto;
+  right: 20px;
+}
+.header__content__links a {
+  font-family: "Archivo", sans-serif;
+  text-decoration: none;
+  color: #222222;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.41px;
+  letter-spacing: -0.4799999893px;
+  padding: 5px;
+}
+.header__content__links .veige {
+  color: #BEAD8E;
+}
+
+.room {
+  padding: 20px;
+  margin-top: 1em;
+  position: relative;
+  text-align: center;
+}
+.room__picture {
+  background-color: #E9E9E9;
+  width: 100%;
+  height: 250px;
+}
+.room__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  background-color: white;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.room__icons img {
+  font-size: 15px;
+}
+.room--title {
+  margin-top: 2em;
+  font-family: "Old Standard TT", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.7200000286px;
+}
+.room--text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #777777;
+  padding: 1em 1em;
+}
+.room h2 {
+  color: #BEAD8E;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.41px;
+}
+.room h2 span {
+  color: #BDBDBD;
+}
+.room__pages {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.room__pages--page {
+  padding: 10px 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: center;
+}
+.room__pages--page.active {
+  background-color: #BEAD8E;
+  color: white;
+}
+
+.footer {
+  margin-top: 3em;
+  font-family: "Archivo", sans-serif;
+  padding: 30px 20px;
+  padding-bottom: 0;
+  background-image: url("../images/Rectángulo 2 1.png");
+}
+.footer__title {
+  display: flex;
+  margin-bottom: 2em;
+}
+.footer__title--H {
+  color: white;
+  background-color: #BEAD8E;
+  padding: 10px 25px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__title--title {
+  font-family: Archivo;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 28.29px;
+  letter-spacing: 2.5999999046px;
+  text-align: left;
+  padding: 10px 0;
+  padding-left: 30px;
+}
+.footer__title--title span {
+  font-family: Archivo;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 28.29px;
+  letter-spacing: 2.5999999046px;
+}
+.footer--text {
+  font-family: Archivo;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #777777;
+  margin-bottom: 1em;
+}
+.footer__icons {
+  display: flex;
+  padding: 5px;
+  gap: 5px;
+  margin-bottom: 1em;
+}
+.footer__icons img {
+  padding: 5px;
+  background-color: #F8F8F8;
+  width: 12%;
+}
+.footer__icons .X {
+  background-color: #BEAD8E;
+}
+.footer--subtitle {
+  color: #222222;
+  font-family: "Old Standard TT", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 1em;
+}
+.footer__list {
+  display: flex;
+  color: #777777;
+  margin-bottom: 1em;
+}
+.footer__list ul li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+.footer__contact {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 2em;
+  align-items: center;
+}
+.footer__contact img {
+  width: 10%;
+  height: 10%;
+}
+.footer__contact--title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  font-family: "Old Standard TT", serif;
+  color: #222222;
+  padding-right: 6.5em;
+}
+.footer__contact--title.black {
+  padding-right: 3em;
+}
+.footer__contact--title span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+}
+.footer__nav {
+  background-color: #F8F8F8;
+  padding: 10px 0;
+}
+.footer__nav h1 {
+  padding: 10px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+  letter-spacing: -0.4799999893px;
+  text-align: left;
+  color: #222222;
+}/*# sourceMappingURL=rooms.css.map */
