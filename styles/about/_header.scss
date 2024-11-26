@@ -1,4 +1,5 @@
 .header {
+    position: relative;
 
     &__nav {
         display: flex;
@@ -37,6 +38,57 @@
 
             h1 {
                 font-size: 12px;
+            }
+        }
+    }
+
+    &__content {
+        background-color: #333333;
+        color: white;
+        padding: 80px 20px;
+
+        h2 {
+            font-family: "Archivo", sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 18px;
+            letter-spacing: 5px;
+            padding-right: 80px;
+            margin-bottom: 1em;
+        }
+
+        h1 {
+            font-family: "Old Standard TT", serif;
+            font-size: 56px;
+            font-weight: 400;
+            line-height: 60px;
+            margin-bottom: 30px;
+        }
+
+        &__links {
+            background-color: white;
+            color: #222222;
+            position: absolute;
+            text-align: center;
+            bottom: -1px;
+            padding: 15px 20px;
+            width: auto;
+            right: 20px;
+
+            a {
+                font-family: "Archivo", sans-serif;
+                text-decoration: none;
+                color: #222222;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 17.41px;
+                letter-spacing: -0.47999998927116394px;
+                padding: 5px;
+            }
+
+            .veige {
+                color: #BEAD8E;
             }
         }
     }

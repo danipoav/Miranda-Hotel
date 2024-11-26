@@ -12,6 +12,9 @@ body {
   min-width: 320px;
 }
 
+.header {
+  position: relative;
+}
 .header__nav {
   display: flex;
   font-family: "Archivo", sans-serif;
@@ -45,4 +48,149 @@ body {
 }
 .header__nav--title h1 {
   font-size: 12px;
+}
+.header__content {
+  background-color: #333333;
+  color: white;
+  padding: 80px 20px;
+}
+.header__content h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 5px;
+  padding-right: 80px;
+  margin-bottom: 1em;
+}
+.header__content h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+.header__content__links {
+  background-color: white;
+  color: #222222;
+  position: absolute;
+  text-align: center;
+  bottom: -1px;
+  padding: 15px 20px;
+  width: auto;
+  right: 20px;
+}
+.header__content__links a {
+  font-family: "Archivo", sans-serif;
+  text-decoration: none;
+  color: #222222;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.41px;
+  letter-spacing: -0.4799999893px;
+  padding: 5px;
+}
+.header__content__links .veige {
+  color: #BEAD8E;
+}
+
+.info {
+  padding: 30px 20px;
+  margin-top: 2em;
+  font-family: "Archivo", sans-serif;
+}
+.info__video {
+  height: 200px;
+  width: 100%;
+  background-color: #DADADA;
+}
+.info--title {
+  font-family: "Old Standard TT", serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39.55px;
+  letter-spacing: -1.1599999666px;
+  text-align: center;
+  margin: 1em 0;
+}
+.info__picture {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 1em 0;
+}
+.info__picture__content {
+  padding: 1em 0;
+  text-align: center;
+  width: 46%;
+  height: auto;
+  min-height: 150px;
+  align-content: center;
+}
+.info__picture__content img {
+  width: 50px;
+  height: auto;
+}
+.info__picture__content.beige {
+  background-color: #BEAD8E;
+  color: white;
+}
+.info__picture__content--title {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 2.4000000954px;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.restaurant {
+  font-family: "Archivo", sans-serif;
+  padding: 20px;
+  margin: 0 1em;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 4em;
+}
+.restaurant__picture {
+  height: 300px;
+  width: 100%;
+  background-color: #DADADA;
+  margin-bottom: 2em;
+}
+.restaurant--subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+}
+.restaurant--title {
+  font-family: "Old Standard TT", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 49.44px;
+  letter-spacing: -1.0499999523px;
+  text-align: left;
+  margin: 0.8em 0;
+}
+.restaurant--text {
+  font-family: Archivo;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777777;
+}
+.restaurant--button {
+  color: white;
+  display: inline-block;
+  background-color: #BEAD8E;
+  border: 1px solid #FFFFFF;
+  padding: 20px 40px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin: 2em 0;
 }/*# sourceMappingURL=about.css.map */
