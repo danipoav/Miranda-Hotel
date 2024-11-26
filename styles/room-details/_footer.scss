@@ -1,0 +1,148 @@
+.footer {
+    margin-top: 5em;
+    font-family: "Archivo", sans-serif;
+    padding: 30px 20px;
+    padding-bottom: 0;
+    background-image: url("../images/Rectángulo\ 2\ 1.png");
+
+    &__title {
+        display: flex;
+        margin-bottom: 2em;
+
+        &--H {
+            color: white;
+            background-color: #BEAD8E;
+            padding: 10px 25px;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 43px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &--title {
+            font-family: Archivo;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 28.29px;
+            letter-spacing: 2.5999999046325684px;
+            text-align: left;
+            padding: 10px 0;
+            padding-left: 30px;
+
+            span {
+                font-family: Archivo;
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 28.29px;
+                letter-spacing: 2.5999999046325684px;
+            }
+        }
+    }
+
+    &--text {
+        font-family: Archivo;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        color: #777777;
+        margin-bottom: 1em;
+    }
+
+    &__icons {
+        display: flex;
+        padding: 5px;
+        gap: 5px;
+        margin-bottom: 1em;
+
+        img {
+            padding: 5px;
+            background-color: #F8F8F8;
+            width: 12%;
+        }
+
+        .X {
+            background-color: #BEAD8E;
+        }
+    }
+
+    &--subtitle {
+        color: #222222;
+        font-family: "Old Standard TT", serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        margin-bottom: 1em;
+    }
+
+    &__list {
+        display: flex;
+        color: #777777;
+        margin-bottom: 1em;
+
+        ul {
+            li {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 48px;
+                text-align: left;
+                font-family: "Roboto", sans-serif;
+                list-style: none;
+            }
+        }
+    }
+
+    &__contact {
+        display: flex;
+        gap: 25px;
+        margin-bottom: 2em;
+        align-items: center;
+
+        img {
+            width: 10%;
+            height: 10%;
+        }
+
+        &--title {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            font-family: "Old Standard TT", serif;
+            color: #222222;
+            padding-right: 6.5em;
+
+            &.black {
+                padding-right: 3em;
+            }
+
+            span {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16.41px;
+                text-align: left;
+                font-family: "Roboto", sans-serif;
+                color: #777777;
+            }
+        }
+    }
+
+    &__nav {
+        background-color: #F8F8F8;
+        padding: 10px 0;
+
+        h1 {
+            padding: 10px 0;
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18.75px;
+            letter-spacing: -0.47999998927116394px;
+            text-align: left;
+            color: #222222;
+        }
+    }
+}
