@@ -1,0 +1,118 @@
+.rooms {
+    padding: 20px;
+    margin-top: 1em;
+    position: relative;
+    text-align: center;
+    background-color: #222222;
+    padding-bottom: 3em;
+
+    .color {
+        background-color: white;
+        padding-bottom: 2em;
+        position: relative;
+    }
+
+    .button {
+        position: absolute;
+        padding: 7px 10px;
+        border: none;
+        outline: none;
+        background-color: white;
+
+        &.right {
+            top: 25%;
+            right: -5px;
+            color: white;
+            background-color: #BEAD8E;
+        }
+
+        &.left {
+            background-color: white;
+            top: 25%;
+            left: -5px;
+        }
+
+    }
+
+    &__picture {
+        background-color: #E9E9E9;
+        width: 100%;
+        height: 250px;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        background-color: white;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 10px 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+        img {
+            font-size: 15px;
+        }
+    }
+
+
+
+    &--title {
+        margin-top: 2em;
+        font-family: "Old Standard TT", serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.7200000286102295px;
+
+
+        &.room {
+            margin: 0;
+            font-family: "Old Standard TT", serif;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: center;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+            color: white;
+        }
+    }
+
+    &--text {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        color: #777777;
+        padding: 1em 1em;
+    }
+
+    h2 {
+        color: #BEAD8E;
+        font-family: "Archivo", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 17.41px;
+
+        span {
+            color: #BDBDBD;
+            margin-left: 1em;
+        }
+    }
+
+    &--subtitle {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 15.23px;
+        letter-spacing: 2.799999952316284px;
+        color: white;
+        color: #BEAD8E;
+        margin: 2em;
+    }
+}
