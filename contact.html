@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/contact.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/showNav.js"></script>
     <title>Contact</title>
 </head>
 
 <body>
     <nav class="header__nav">
-        <img class="header__nav--menu" src="images/nav.png" alt="navIcon">
+        <img id="nav--button" class="header__nav--menu" src="images/nav.png" alt="navIcon">
         <div class="header__nav__logo">
             <h1>H</h1>
         </div>
@@ -22,7 +23,7 @@
             <img src="images/search.png" alt="search">
         </div>
     </nav>
-    <nav class="header__nav__links">
+    <nav id="nav--Links" class="header__nav__links none">
         <a href="about.html">About Us</a>
         <a href="rooms.html">Rooms</a>
         <a href="offers.html">Offers</a>

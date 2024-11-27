@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/showNav.js"></script>
     <title>Home</title>
     <link rel="stylesheet" href="styles/home.css">
 </head>
 
 <body>
     <nav class="header__nav">
-        <img class="header__nav--menu" src="images/nav.png" alt="navIcon">
+        <img id="nav--button" class="header__nav--menu" src="images/nav.png" alt="navIcon">
         <div class="header__nav__logo">
             <h1>H</h1>
         </div>
@@ -21,6 +22,12 @@
             <img src="images/person.png" alt="person">
             <img src="images/search.png" alt="search">
         </div>
+    </nav>
+    <nav id="nav--Links" class="header__nav__links none">
+        <a href="about.html">About Us</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="offers.html">Offers</a>
+        <a href="contact.html">Contact</a>
     </nav>
     <header class="header">
         <section class="header__content">

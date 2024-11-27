@@ -21,6 +21,29 @@ body {
   font-family: "Archivo", sans-serif;
   padding: 20px 20px;
   align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.header__nav__links {
+  flex-direction: column;
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+}
+.header__nav__links.none {
+  display: none;
+}
+.header__nav__links a {
+  text-decoration: none;
+  color: #111111;
+  font-family: Archivo;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 17.41px;
+  font-family: "Archivo", sans-serif;
 }
 .header__nav--menu {
   margin-right: 40px;

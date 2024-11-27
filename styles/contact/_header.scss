@@ -10,9 +10,17 @@
 
         &__links {
             flex-direction: column;
-            display: none;
+            display: flex;
             gap: 15px;
             padding: 20px;
+            position: absolute;
+            z-index: 1;
+            background-color: white;
+            width: 100%;
+
+            &.none {
+                display: none;
+            }
 
             a {
                 text-decoration: none;

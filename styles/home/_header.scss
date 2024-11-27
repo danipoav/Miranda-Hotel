@@ -6,6 +6,31 @@
         padding: 20px 20px;
         align-items: center;
 
+        &__links {
+            flex-direction: column;
+            display: flex;
+            gap: 15px;
+            padding: 20px;
+            position: absolute;
+            z-index: 1;
+            background-color: white;
+            width: 100%;
+
+            &.none {
+                display: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: #111111;
+                font-family: Archivo;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 17.41px;
+                font-family: "Archivo", sans-serif;
+            }
+        }
+
         &--menu {
             margin-right: 40px;
             height: 20px;
