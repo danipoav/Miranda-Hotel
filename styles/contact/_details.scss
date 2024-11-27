@@ -1,0 +1,102 @@
+.details {
+    padding: 20px;
+
+    &__content {
+        display: flex;
+        padding: 5em 0;
+        position: relative;
+        align-items: flex-start;
+
+        img {
+            margin: 0 15px;
+        }
+
+        &--background {
+            font-family: "Roboto", sans-serif;
+            font-size: 200px;
+            font-weight: 700;
+            line-height: 234.38px;
+            letter-spacing: -6px;
+            text-align: left;
+            color: #F8F8F8;
+            position: absolute;
+            right: 0;
+            top: 10%;
+        }
+
+
+        &--title {
+            font-family: "Old Standard TT", serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: #222222;
+            z-index: 1;
+
+            span {
+                display: block;
+                font-family: "Roboto", sans-serif;
+                color: #777777;
+                font-size: 14px;
+
+                &.margin {
+                    margin-top: 1em;
+                }
+            }
+        }
+    }
+
+    &__picture {
+        width: 100%;
+        height: 200px;
+        background-color: #D4D4D4;
+        margin: 3em 0;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &__content {
+            position: relative;
+            align-content: center;
+
+            img {
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 20px;
+                height: 20px;
+            }
+
+            input {
+                width: 100%;
+                border: none;
+                outline: none;
+                font-family: "Roboto", sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18.75px;
+                text-align: left;
+                padding: 20px 30px;
+                background-color: #F8F8F8;
+                color: #777777;
+                padding-left: 15%;
+                line-height: 50%;
+            }
+        }
+
+        &--button {
+            background-color: #BEAD8E;
+            padding: 20px 30px;
+            color: white;
+            border: none;
+            outline: none;
+            width: 70%;
+            align-self: center;
+        }
+    }
+}
