@@ -2,6 +2,10 @@
     font-family: "Old Standard TT", serif;
     text-align: center;
 
+    .query__content.block {
+        display: none;
+    }
+
     &--subtitle {
         font-family: "Archivo", sans-serif;
         font-size: 14px;
@@ -78,6 +82,31 @@
 
             &.color {
                 background-color: #BEAD8E;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+    .facilities {
+        padding: 5em 20em;
+
+        &__dots {
+            display: none;
+        }
+    }
+
+    .query {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__content {
+            width: 30%;
+
+            &.block {
+                display: block !important;
             }
         }
     }

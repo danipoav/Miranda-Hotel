@@ -77,3 +77,46 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+
+    .about {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 5em 15em;
+
+        .query {
+            width: 70%;
+            padding: 5em 10em;
+            padding-left: 5em;
+        }
+
+
+        &__content {
+            margin: 0 1em;
+            box-shadow: none;
+            display: flex;
+            flex-direction: column-reverse;
+
+            &.second {
+                display: block;
+            }
+
+            &__image {
+                height: 350px;
+                margin-bottom: 2em;
+
+                &.second {
+                    margin-top: 2em;
+                    height: 300px;
+                    margin-bottom: auto;
+                }
+            }
+
+            &__text {
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+            }
+        }
+    }
+}

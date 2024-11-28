@@ -48,5 +48,34 @@
         background-color: #BDAC8D;
         padding: 20px 50px;
         margin-bottom: 3em;
+
+        &.query {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    .video {
+        margin-top: 4em;
+        display: flex;
+        padding: 5em 20em;
+
+        .query {
+            padding-right: 7em;
+
+        }
+
+        &--content {
+            height: auto;
+        }
+
+        &--button {
+            display: none;
+
+            &.query {
+                display: block;
+            }
+        }
     }
 }

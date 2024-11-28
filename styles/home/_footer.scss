@@ -132,7 +132,7 @@
 
     &__nav {
         background-color: #F8F8F8;
-        padding: 10px 0;
+        padding: 10px;
 
         h1 {
             padding: 10px 0;
@@ -144,5 +144,37 @@
             text-align: left;
             color: #222222;
         }
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .footer {
+        padding: 5em 20em;
+        display: flex;
+        padding-right: 15em;
+
+        &__contact {
+            margin-bottom: 5em;
+            padding-right: 10em;
+        }
+    }
+
+    .query__list {
+        width: 100%;
+    }
+
+    .query__ul {
+        margin-left: 5em;
+    }
+
+    .query__title {
+        width: 70%;
+        padding-right: 5em;
+        margin-right: 7em;
+    }
+
+    .query__contact {
+        width: 100%;
+        margin-left: 5em;
     }
 }
