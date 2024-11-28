@@ -153,3 +153,87 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .header {
+        background-color: #222222;
+        padding-top: 5.5em;
+
+        &__nav {
+            position: absolute;
+            background-color: white;
+            left: 10%;
+            width: 80%;
+            top: 5%;
+
+            &__logo {
+                font-size: 20px;
+            }
+
+            &__icons {
+                margin-right: 4em;
+                gap: 2em;
+
+                img {
+                    border: 1px solid black;
+                    padding: 10px;
+                }
+            }
+
+            &--title {
+                font-size: 20px;
+                text-transform: uppercase;
+
+                h1 {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &__content {
+            padding: 10em 20em;
+
+            h1 {
+                font-family: Old Standard TT;
+                font-size: 120px;
+                font-weight: 400;
+                line-height: 130px;
+                letter-spacing: -3.5999999046325684px;
+                text-align: left;
+                width: 60%;
+            }
+
+            &__buttons {
+                display: flex;
+                width: 45%;
+
+                .button {
+                    padding: 20px 30px;
+                    margin: 0;
+
+                    &.veige {
+                        margin-right: 2em;
+                    }
+                }
+            }
+        }
+
+        &__form {
+            display: flex;
+            padding: 3em 20em;
+            padding-right: 15em;
+
+            div {
+                width: 100%;
+                padding-right: 2em;
+            }
+
+            .button {
+                padding: 10px 0px;
+                width: 100%;
+                margin: 1em 0;
+                margin-left: 10em;
+            }
+        }
+    }
+}
