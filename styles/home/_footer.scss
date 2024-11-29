@@ -157,6 +157,12 @@
             margin-bottom: 5em;
             padding-right: 10em;
         }
+
+        &__nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 2em 20em;
+        }
     }
 
     .query__list {

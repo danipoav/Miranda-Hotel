@@ -66,6 +66,10 @@
         margin-bottom: 5em;
         margin-top: 2em;
 
+        &.queryButtons {
+            display: none;
+        }
+
         .button {
             padding: 10px 15px;
             background-color: #F8F8F8;
@@ -85,6 +89,10 @@
         height: 350px;
         width: 100%;
         background-color: #EDEDED;
+
+        &.queryimage {
+            display: none;
+        }
     }
 
     &__dots {
@@ -103,6 +111,75 @@
 
             &.active {
                 background-color: #BEAD8E;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1000px) {
+
+    .menu {
+        padding: 5em 20em;
+
+        &__dots {
+            display: none;
+        }
+
+        .query__img {
+            display: flex;
+        }
+
+        &__image {
+            margin: 1em 1em;
+            margin-top: 3em;
+
+            &.queryimage {
+                display: block;
+            }
+        }
+
+        &--donut {
+            top: 0;
+            left: 5%;
+            width: 10%;
+            content: url('../../images/donutquery.svg');
+        }
+
+        &__buttons {
+            text-align: end;
+            margin-bottom: 5em;
+            margin-top: 2em;
+            display: none;
+
+            &.queryButtons {
+                display: block;
+                margin-bottom: 1em;
+
+                .button {
+                    padding: 20px 30px;
+                }
+            }
+        }
+
+        .query {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .menu__item {
+            width: 50%;
+            margin-bottom: 3em;
+
+            &--image {
+                width: 130px;
+                height: auto;
+            }
+
+            &__content {
+                width: 50%;
+                height: 100px;
+                align-content: center;
             }
         }
     }

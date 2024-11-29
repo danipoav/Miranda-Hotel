@@ -157,6 +157,11 @@ body {
     width: 80%;
     top: 5%;
   }
+  .header__nav__links {
+    left: 10%;
+    width: 80%;
+    top: 14%;
+  }
   .header__nav__logo {
     font-size: 20px;
   }
@@ -681,6 +686,9 @@ body {
   margin-bottom: 5em;
   margin-top: 2em;
 }
+.menu__buttons.queryButtons {
+  display: none;
+}
 .menu__buttons .button {
   padding: 10px 15px;
   background-color: #F8F8F8;
@@ -697,6 +705,9 @@ body {
   height: 350px;
   width: 100%;
   background-color: #EDEDED;
+}
+.menu__image.queryimage {
+  display: none;
 }
 .menu__dots {
   margin: 2em 0;
@@ -716,6 +727,61 @@ body {
   background-color: #BEAD8E;
 }
 
+@media screen and (min-width: 1000px) {
+  .menu {
+    padding: 5em 20em;
+  }
+  .menu__dots {
+    display: none;
+  }
+  .menu .query__img {
+    display: flex;
+  }
+  .menu__image {
+    margin: 1em 1em;
+    margin-top: 3em;
+  }
+  .menu__image.queryimage {
+    display: block;
+  }
+  .menu--donut {
+    top: 0;
+    left: 5%;
+    width: 10%;
+    content: url("../../images/donutquery.svg");
+  }
+  .menu__buttons {
+    text-align: end;
+    margin-bottom: 5em;
+    margin-top: 2em;
+    display: none;
+  }
+  .menu__buttons.queryButtons {
+    display: block;
+    margin-bottom: 1em;
+  }
+  .menu__buttons.queryButtons .button {
+    padding: 20px 30px;
+  }
+  .menu .query {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .menu .menu__item {
+    width: 50%;
+    margin-bottom: 3em;
+  }
+  .menu .menu__item--image {
+    width: 130px;
+    height: auto;
+  }
+  .menu .menu__item__content {
+    width: 50%;
+    height: 100px;
+    align-content: center;
+  }
+}
 .data {
   font-family: "Roboto", sans-serif;
   background-color: #222222;
@@ -887,6 +953,11 @@ body {
   .footer__contact {
     margin-bottom: 5em;
     padding-right: 10em;
+  }
+  .footer__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 20em;
   }
   .query__list {
     width: 100%;
