@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="js/showNav.js"></script>
     <title>Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/home.css">
 </head>
 
@@ -92,7 +94,8 @@
 
         <section class="rooms">
             <h2 class="rooms--subtitle">ROOMS</h2>
-            <h1 class="rooms--title">Hand Oicked Rooms</h1>
+            <h1 class="rooms--title">Hand Picked Rooms</h1>
+
             <div class="rooms__icons">
                 <img src="images/bed.png" alt="bed">
                 <img src="images/wifi.png" alt="wifi">
@@ -103,26 +106,32 @@
                 <img src="images/cocktail.png" alt="cocktail">
             </div>
 
-            <div class="rooms__images">
-                <button class="button left">&lt;</button>
-                <button class="button right">&gt;</button>
+            <div class="swiper rooms__images">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="room__image"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="room__image" style="background-color: aqua;"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="room__image" style="background-color: blueviolet;"></div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
 
             <div class="rooms__info">
                 <div class="query">
                     <h1 class="rooms__info--title2">Minimal Duplex Room</h1>
-                    <p class="rooms__info--text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et
-                        dolore.
-                    </p>
+                    <p class="rooms__info--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
-                <h2 class="rooms__info--price">
-                    $345<span>/Night</span>
-                </h2>
+                <h2 class="rooms__info--price">$345<span>/Night</span></h2>
             </div>
         </section>
+
+
 
         <section class="video">
             <div class="query">
