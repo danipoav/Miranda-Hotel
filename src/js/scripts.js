@@ -30,9 +30,7 @@ const hideNavBar = () => {
 window.addEventListener('scroll', hideNavBar);
 
 
-// Slider for rooms sections (Home)
 const swiper = new Swiper(".swiper", {
-  // Necessary parameters
   effect: "slide",
   direction: "horizontal",
   loop: true,
@@ -42,7 +40,6 @@ const swiper = new Swiper(".swiper", {
     delay: 6000,
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -56,7 +53,6 @@ const swiper = new Swiper(".swiper", {
 });
 
 
-// Slider for features section (Home)
 const swiperFeatures = new Swiper(".swiperFeatures", {
   direction: "horizontal",
   loop: true,
@@ -72,7 +68,6 @@ const swiperFeatures = new Swiper(".swiperFeatures", {
 });
 
 
-// Slider for menu section (Home)
 const swiperMenu = new Swiper(".swiperMenu", {
   direction: "horizontal",
   loop: true,
@@ -94,7 +89,6 @@ const swiperMenu = new Swiper(".swiperMenu", {
 });
 
 
-// Slider for secondary menu section (Home)
 const swiperMenuImages = new Swiper(".swiperMenuImages", {
   direction: "horizontal",
   loop: true,
@@ -110,7 +104,6 @@ const swiperMenuImages = new Swiper(".swiperMenuImages", {
 });
 
 
-// Slider for rooms list (rooms.html)
 const swiperRoomsList = new Swiper(".swiperRoomsList", {
   direction: "horizontal",
   loop: true,
