@@ -1,0 +1,69 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// CONTACT FORM SECTION STYLES
+.contactFormSection {
+    width: 90%;
+    margin: auto;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+
+    & div:nth-child(3) {
+        @include mq.desktop {
+            width: 91.5%;
+        }
+    }
+
+    @include mq.desktop {
+        width: 80%;
+    }
+
+    &__firstContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        width: 100%;
+
+        @include mq.desktop {
+            width: 45%;
+        }
+
+        &__input {
+            position: relative;
+
+            &__field {
+                border: none;
+                background-color: $lightest-grey;
+                width: 100%;
+                padding: 2.5rem 5.2rem;
+
+                &--big {
+                    border: none;
+                    background-color: $lightest-grey;
+                    width: 100%;
+                    padding: 2.5rem 5.2rem 13rem 5.2rem;
+                }
+            }
+
+            &__icon {
+                position: absolute;
+                width: 1.5rem;
+                height: 1.5rem;
+                left: 2rem;
+                top: 2.5rem;
+            }
+        }
+    }
+
+    & button {
+        width: 80%;
+        margin-top: 2rem;
+
+        @include mq.desktop {
+            width: 20%;
+        }
+    }
+}

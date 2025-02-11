@@ -1,0 +1,297 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// POPULAR ROOMS SECTION STYLES
+.popularRoomsSection {
+    width: 100%;
+    background-color: $darker-grey;
+    padding-top: 4.8rem;
+    margin-top: 2rem;
+    text-align: center;
+
+    
+
+    &__subtitle {
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.28rem;
+        color: $gold;
+    }
+
+    &__title {
+        text-align: center !important;
+        padding-top: 2.5rem;
+        font-family: $standard-tt-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 4.8rem;
+        letter-spacing: -0.08rem;
+        color: $white;
+    }
+
+    .roomSlider__slides,
+    .swiper {
+        position: relative;
+        width: 90%;
+        height: fit-content;
+        margin: 4.8rem auto;
+        background-color: $white;
+
+        @include mq.desktop {
+            display: none;
+            background-color: red;
+        }
+
+        &-button-prev,
+        &-button-next {
+            user-select: none;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 13rem;
+            width: 3.2rem;
+            height: 3.2rem;
+            z-index: 99;
+            background-color: $white;
+            font-size: 1rem;
+            color: $black;
+            font-weight: 700;
+            cursor: pointer;
+
+            &:after {
+                font-size: 1rem;
+            }
+
+            &:hover {
+                background-color: $gold;
+                color: $white;
+            }
+        }
+
+        &-button-prev {
+            left: 0rem;
+            right: auto;
+        }
+
+        &-button-next {
+            right: 0rem;
+            left: auto;
+        }
+
+        .swiper-slide {
+            padding: 0;
+        }
+
+        &--extras {
+            position: absolute;
+            width: 30rem;
+            height: 8rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 22.5rem;
+            z-index: 10;
+
+            @include mq.desktop {
+                opacity: 1;
+            }
+        }
+
+        &--roomImg {
+            width: 100%;
+            height: 25rem;
+            object-fit: cover;
+            max-width: 100%;
+
+            @include mq.desktop {
+                max-width: 30%;
+                display: inline-block;
+            }
+        }
+
+        &--title {
+            position: relative;
+            width: 90%;
+            padding: 0;
+            margin: 4.9rem 2rem 0 2rem;
+            top: 0;
+            background-color: $white;
+            font-family: $standard-tt-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.8rem;
+            line-height: 3.6rem;
+            letter-spacing: -0.12rem;
+            color: #222222;
+
+            @include mq.desktop {
+                opacity: 1;
+                display: inline-block;
+                width: 25%;
+            }
+        }
+
+        &--description {
+            padding: 1.6rem 5rem 2rem 5rem;
+            font-family: $roboto-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: $light-grey;
+
+            @include mq.desktop {
+                opacity: 1;
+                display: inline-block;
+                width: 25%;
+            }
+        }
+
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            padding-bottom: 2rem;
+
+            &--price {
+                padding: 0 0 2rem 0;
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 1.7rem;
+                color: $gold;
+
+                &--perNight {
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                    line-height: 1.7rem;
+                }
+            }
+
+            &--bookNow {
+                padding: 0 0 2rem 0;
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 1.7rem;
+                color: #BDBDBD;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    &__desktopContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+        gap: 1rem;
+    }
+
+    &__swiper__slide {
+        position: relative;
+        max-width: 30rem;
+        height: fit-content;
+        text-align: center;
+        background-color: $white;
+
+       
+
+        &__extras {
+            position: absolute;
+            width: 30rem;
+            height: 8rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: auto;
+            bottom: 20rem;
+            z-index: 10;
+        }
+
+        &__roomImg {
+            width: 100%;
+            height: 25rem;
+            object-fit: cover;
+            max-width: 100%;
+        }
+
+        &__title {
+            position: relative;
+            width: 90%;
+            padding: 0;
+            margin: 4.9rem auto 0 auto;
+            top: 0;
+            background-color: $white;
+            font-family: $standard-tt-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.8rem;
+            line-height: 3.6rem;
+            letter-spacing: -0.12rem;
+            color: #222222;
+        }
+
+        &__description {
+            padding: 1.6rem 0 2rem 0;
+            font-family: $roboto-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: $light-grey;
+        }
+
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            padding-bottom: 2rem;
+
+            &__price {
+                padding: 0 0 2rem 0;
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 1.7rem;
+                color: $gold;
+
+                &--perNight {
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                    line-height: 1.7rem;
+                }
+            }
+
+            &__bookNow {
+                padding: 0 0 2rem 0;
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 1.7rem;
+                color: #BDBDBD;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $black;
+                }
+            }
+        }
+
+    }
+}

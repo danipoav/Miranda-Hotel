@@ -1,0 +1,235 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// MENU SECTION STYLES
+.menuSection {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 18rem 2rem 0 2rem;
+
+    @include mq.desktop {
+        width: 70%;
+        margin: auto;
+        overflow: visible;
+        scale: (1);
+    }
+
+    .wrapper {
+        @include mq.desktop {
+            overflow: hidden;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        width: 11.4rem;
+        height: 11.4rem;
+        top: 7rem;
+        right: -2.5rem;
+
+        @include mq.desktop {
+            position: fixed;
+            right: auto;
+            left: -14.5rem;
+            top: 9rem;
+        }
+    }
+
+    &__subtitle {
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.28rem;
+        color: $light-grey;
+    }
+
+    &__title {
+        padding-top: 2.4rem;
+        font-family: $standard-tt-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5.6rem;
+        line-height: 6rem;
+        letter-spacing: -0.12rem;
+        color: #222222;
+    }
+
+    &__slides,
+    .swiperMenu {
+        position: relative;
+        max-width: 100%;
+        padding-top: 4.4rem;
+        height: fit-content;
+
+        &-button-prev,
+        &-button-next {
+            user-select: none;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: -3.4rem;
+            width: 3.6rem;
+            height: 3.6rem;
+            z-index: 99;
+            background-color: #F8F8F8;
+            font-family: $roboto-font;
+            font-size: 1.5rem;
+            color: $black;
+            font-weight: 300;
+            cursor: pointer;
+
+            @include mq.desktop {
+                bottom: auto;
+                top: -5rem;
+            }
+
+            &:after {
+                font-size: 1rem;
+            }
+
+            &:hover {
+                background-color: $gold;
+                color: $white;
+            }
+        }
+
+        &-button-prev {
+            right: 5rem;
+        }
+
+        &-button-next {
+            right: 0;
+        }
+
+        &__part1,
+        &__part2,
+        &__part3 {
+            display: flex;
+            flex-direction: row;
+            // height: 12rem;
+            margin-bottom: 1.6rem;
+
+            &:hover {
+                @include mq.desktop {
+                    transition: all 0.3s;
+                    background-color: $darker-grey;
+
+                    .menuSection__slides__part1__container2--title,
+                    .menuSection__slides__part1__container2--description,
+                    .menuSection__slides__part2__container2--title,
+                    .menuSection__slides__part2__container2--description,
+                    .menuSection__slides__part3__container2--title,
+                    .menuSection__slides__part3__container2--description {
+                        color: $white;
+                    }
+
+                    .menuSection__slides__part1--arrow,
+                    .menuSection__slides__part2--arrow,
+                    .menuSection__slides__part3--arrow {
+                        display: block;
+                    }
+                }
+
+            }
+
+            &__container {
+                &--icon {
+                    width: 12rem;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &__container2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 3rem;
+
+                @include mq.desktop {
+                    flex-grow: 2;
+                    padding: 1rem 0 1rem 3rem;
+                }
+
+                &--title {
+                    padding-bottom: 1.2rem;
+                    font-family: $standard-tt-font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 2.4rem;
+                    line-height: 2.4rem;
+                    letter-spacing: -0.072rem;
+                    color: #222222;
+                }
+
+                &--description {
+                    font-family: $roboto-font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    line-height: 2.4rem;
+                    color: $light-grey;
+                }
+            }
+
+            &--arrow {
+                display: none;
+                width: 3rem;
+                height: 1.5rem;
+                align-self: center;
+                margin-right: 3rem;
+                margin-left: 3rem;
+            }
+        }
+    }
+
+    & .swiperMenuImages {
+        max-width: 100%;
+        height: fit-content;
+        padding-top: 12rem;
+        text-align: center;
+
+        @include mq.desktop {
+            display: none;
+        }
+
+        & img {
+            width: 33.5rem;
+            height: 33.5rem;
+            object-fit: cover;
+        }
+
+        &-pagination {
+            display: flex;
+            justify-content: center;
+            height: 0.8rem;
+            margin-top: 3.2rem;
+            color: $gold;
+
+            & .swiper-pagination-bullet-active {
+                background: $gold;
+            }
+        }
+    }
+
+    &__imagesDesktop {
+        padding-top: 12rem;
+
+        // @include mq.nondesktop {
+        //     display: none;
+        // }
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+
+        & img {
+            height: 25%;
+            width: 33%;
+        }
+    }
+}

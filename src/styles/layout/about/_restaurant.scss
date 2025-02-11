@@ -1,0 +1,77 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// RESTAURANT SECTION STYLES
+.restaurantSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+    padding: 2rem;
+    box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+
+    @include mq.desktop {
+        max-width: 80%;
+        margin: auto;
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    &__img {
+        width: 100%;
+        min-height: 20.3rem;
+
+        @include mq.desktop {
+            width: 40%;
+            min-height: 35rem;
+        }
+    }
+
+    &__container {
+
+        @include mq.desktop {
+            width: 50%;
+        }
+
+        &__subtitle {
+            margin-top: 3.2rem;
+            font-family: $archivo-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 1.5rem;
+            letter-spacing: 0.28rem;
+            color: $light-grey;
+
+            @include mq.desktop {
+                margin-top: 1rem;
+            }
+        }
+
+        &__title {
+            margin-top: 2.6rem;
+            font-family: $standard-tt-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 4rem;
+            letter-spacing: -0.105rem;
+            color: #111111;
+            
+            @include mq.desktop {
+                font-size: 6rem;
+            }
+        }
+
+        &__description {
+            margin-top: 2.6rem;
+            margin-bottom: 1.6rem;
+            font-family: $archivo-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: $light-grey;
+        }
+    }
+
+}

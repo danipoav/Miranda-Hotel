@@ -1,0 +1,111 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// COUNTER SECTION STYLES
+.counterSection {
+    padding: 6rem 2rem 0 2rem;
+
+    @include mq.desktop {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    &__subtitle {
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.28rem;
+        color: $light-grey
+    }
+
+    &__title {
+        margin-top: 2.6rem;
+        font-family: $standard-tt-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5.6rem;
+        line-height: 6rem;
+        letter-spacing: -0.12rem;
+        color: $darker-grey;
+    }
+
+    &__container {
+        padding-top: 6.1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        @include mq.desktop {
+            display: inline-block;
+            padding-right: 5%;
+        }
+
+        &__subContainer {
+            justify-self: start;
+
+            @include mq.desktop {
+                display: inline-block;
+                padding-left: 1.8rem;
+                padding-right: 3rem;
+            }
+
+            &__number {
+                font-family: $standard-tt-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 6rem;
+                line-height: 6rem;
+                letter-spacing: -0.18rem;
+                color: $darker-grey;
+            }
+
+            &__text {
+                font-family: $roboto-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+                color: $light-grey;
+            }
+        }
+
+        &__arrow {
+            justify-self: end;
+
+            @include mq.desktop {
+                padding-bottom: 2rem;
+            }
+        }
+    }
+
+    & .swiperMenuImages {
+        max-width: 100%;
+        height: fit-content;
+        padding-top: 5.2rem;
+        text-align: center;
+        overflow: hidden;
+
+        @include mq.desktop {
+            display: none;
+        }
+
+        & img {
+            width: 33.5rem;
+            height: 33.5rem;
+            object-fit: cover;
+        }
+
+        &-pagination {
+            display: flex;
+            justify-content: center;
+            height: 0.8rem;
+            margin-top: 3.2rem;
+            color: $gold;
+
+            & .swiper-pagination-bullet-active {
+                background: $gold;
+            }
+        }
+    }
+}

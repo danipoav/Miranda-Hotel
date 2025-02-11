@@ -1,0 +1,119 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// AVAILABILITY SECTION STYLES
+.availabilitySection {
+    background-color: $darker-grey;
+    padding: 3rem 2rem;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        @include mq.desktop {
+            flex-direction: row;
+            width: 60%;
+            margin: auto;
+        }
+
+        &__arrival {
+            gap: 1.5rem;
+
+            @include mq.desktop {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &--text {
+                font-family: $roboto-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+                color: $white;
+            }
+
+            &--input {
+                flex-direction: row-reverse;
+                background-color: $darker-grey;
+                border-style: none;
+                padding-bottom: 1rem;
+                border-bottom: 2px solid $gold;
+                font-family: $roboto-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                color: #686868;
+
+                &::-webkit-calendar-picker-indicator {
+                    height: 2rem;
+                    width: 2rem;
+                    filter: invert(0.5) sepia(1);
+                }
+
+            }
+        }
+
+        &__departure {
+            gap: 1.5rem;
+
+            @include mq.desktop {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &--text {
+                font-family: $roboto-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+                color: $white;
+            }
+
+            &--input {
+                flex-direction: row-reverse;
+                background-color: $darker-grey;
+                border-style: none;
+                padding-bottom: 1rem;
+                border-bottom: 2px solid $gold;
+                font-family: $roboto-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                color: #686868;
+
+                &::-webkit-calendar-picker-indicator {
+                    height: 2rem;
+                    width: 2rem;
+                    filter: invert(0.5) sepia(1);
+                }
+            }
+        }
+
+        &__button {
+            border-style: none;
+            height: 6rem;
+            width: fit-content;
+            padding: 2.3rem 4.5rem;
+            background-color: $gold;
+            font-family: $archivo-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 1.5rem;
+            letter-spacing: 0.28rem;
+            color: $white;
+            cursor: pointer;
+
+            @include mq.desktop {
+                min-width: 25rem;
+                margin-left: 15rem;
+                padding: 2.3rem 2.4rem;
+            }
+        }
+    }
+
+}

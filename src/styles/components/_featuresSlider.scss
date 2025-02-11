@@ -1,0 +1,159 @@
+@use "../abstracts/mediaQueries" as mq;
+
+// FEATURES SECTION STYLES
+.featuresSection {
+    margin-top: 6rem;
+    max-width: 100%;
+
+    &__subtitle {
+        text-align: center;
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.28rem;
+        color: $light-grey;
+    }
+
+    &__title {
+        text-align: center;
+        padding-top: 2.4rem;
+        font-family: $standard-tt-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5.6rem;
+        line-height: 6rem;
+        letter-spacing: -0.12rem;
+        color: #222222;
+    }
+
+    &__slides,
+    .swiperFeatures {
+        position: relative;
+        width: 100%;
+        max-width: 50.5rem;
+        margin: auto;
+        padding-top: 3.2rem;
+        height: fit-content;
+        overflow: hidden;
+
+        @include mq.desktop {
+            display: none;
+        }
+
+        &-pagination {
+            display: flex;
+            justify-content: center;
+            height: 0.8rem;
+            margin-top: 3.2rem;
+            color: $gold;
+
+            & .swiper-pagination-bullet {
+                background: $lighter-grey;
+            }
+
+            & .swiper-pagination-bullet-active {
+                background: $gold;
+            }
+        }
+
+        &__container {
+            position: relative;
+            height: fit-content;
+
+            &--icon {
+                margin: 8rem 0 0 3.8rem;
+            }
+
+            &--number {
+                position: absolute;
+                top: 1rem;
+                right: 3.8rem;
+            }
+        }
+
+        &--title {
+            text-align: left;
+            padding: 3.7rem 2rem 0 3.8rem;
+            margin: auto;
+            background-color: $white;
+            font-family: $standard-tt-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.8rem;
+            line-height: 3.6rem;
+            letter-spacing: -0.12rem;
+            color: #222222;
+        }
+
+        &--description {
+            text-align: left;
+            padding: 2.8rem 5rem 0 3.8rem;
+            font-family: $roboto-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: $light-grey;
+        }
+    }
+
+    &__container {
+        width: 80%;
+        margin: auto;
+        padding-top: 6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+
+        
+
+        &__slides {
+            flex-basis: 25%;
+
+            &__container {
+                position: relative;
+                height: fit-content;
+
+                &--icon {
+                    margin: 8rem 0 0 3.8rem;
+                }
+
+                &--number {
+                    position: absolute;
+                    top: 1rem;
+                    right: 3.8rem;
+                }
+            }
+
+
+            &--title {
+                text-align: left;
+                padding: 3.7rem 2rem 0 3.8rem;
+                margin: auto;
+                background-color: $white;
+                font-family: $standard-tt-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2.8rem;
+                line-height: 3.6rem;
+                letter-spacing: -0.12rem;
+                color: #222222;
+            }
+
+            &--description {
+                text-align: left;
+                padding: 2.8rem 5rem 0 3.8rem;
+                font-family: $roboto-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 2.4rem;
+                color: $light-grey;
+            }
+        }
+    }
+}

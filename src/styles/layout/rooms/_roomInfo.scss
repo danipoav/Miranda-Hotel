@@ -1,0 +1,125 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// SINGLE ROOM DETAILS SECTION STYLES
+.roomSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4.8rem 2rem;
+
+    @include mq.desktop {
+        display: none;
+    }
+
+    &__subtitle {
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.28rem;
+        color: $light-grey;
+    }
+
+    &__title {
+        margin-top: 1.2rem;
+        font-family: $standard-tt-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 4.8rem;
+        letter-spacing: -0.144rem;
+        color: $darker-grey;
+    }
+
+    &__price {
+        padding: 1.6rem 0;
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 4.3rem;
+        color: $gold;
+
+        &--perNight {
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+}
+
+.roomSectionDesktop {
+    display: inline-block;
+    width: 45%;
+    margin: 10rem 2% 0 10%;
+
+    @include mq.nondesktop {
+        display: none;
+    }
+
+    &__container {
+        width: 95%;
+        background-color: $white;
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 4rem;
+
+        &__subcontainer {
+            &__title {
+                margin-top: 1.2rem;
+                font-family: $standard-tt-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 4rem;
+                line-height: 4.8rem;
+                letter-spacing: -0.144rem;
+                color: $darker-grey;
+            }
+
+            &__subtitle {
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.4rem;
+                line-height: 1.5rem;
+                letter-spacing: 0.28rem;
+                color: $light-grey;
+            }
+        }
+
+        &__price {
+            padding: 1.6rem 0;
+            font-family: $archivo-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 3.2rem;
+            line-height: 4.3rem;
+            color: $gold;
+
+            &--perNight {
+                font-weight: 400;
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+        }
+    }
+
+    &__roomImg {
+        width: 100%;
+        height: 40%;
+        position: relative;
+        top: -5rem;
+        z-index: -1;
+    }
+
+    &__text {
+        font-family: $roboto-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.054rem;
+        color: $light-grey;
+    }
+}

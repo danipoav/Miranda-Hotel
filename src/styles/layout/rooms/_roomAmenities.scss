@@ -1,0 +1,69 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// SINGLE ROOM AMENITIES 
+.amenitiesSection {
+    width: 90%;
+    margin: auto;
+    padding-top: 6rem;
+
+    @include mq.desktop {
+        width: 80%;
+        margin: auto;
+        padding-top: 10rem;
+        padding-right: 20%;
+    }
+
+    &__separation {
+        width: 100%;
+        height: 1px;
+        margin-top: 1.3rem;
+        margin-bottom: 3.5rem;
+        background-color: #F1F1F1;
+    }
+
+    &__title {
+        font-family: $standard-tt-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 3rem;
+        color: $darker-grey;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1.7rem;
+
+        @include mq.desktop {
+            justify-content: flex-start;
+        }
+
+        &__subcontainer {
+            display: flex;
+            flex-direction: row;
+            gap: 0.8rem;
+            width: 46%;
+
+            @include mq.desktop {
+                width: 25%;
+            }
+
+            &__img {
+                width: 1.8rem;
+                height: 1.6rem;
+            }
+
+            &__text {
+                font-family: $roboto-font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+                color: $light-grey;
+            }
+        }
+    }
+}

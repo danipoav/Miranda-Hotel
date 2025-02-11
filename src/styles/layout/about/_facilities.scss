@@ -1,0 +1,114 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// FEATURES SECTION STYLES
+.dark {
+    padding-top: 4.8rem;
+    padding-bottom: 4.2rem;
+    background-color: $darker-grey;
+
+    @include mq.desktop {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    &__subtitle,
+    &__title {
+        color: white;
+    }
+
+    &__swiper-slide {
+        padding-bottom: 5rem;
+        background-color: #292929;
+    }
+
+    &__slides {
+        &--title {
+            background-color: #292929;
+            color: $white;
+        }
+
+        &--description {
+            color: $white;
+        }
+
+        &--number {
+            font-family: $archivo-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12rem;
+            line-height: 13rem;
+            color: $darker-grey;
+
+            @include mq.desktop {
+                top: -2rem;
+                right: 0;
+            }
+        }
+    }
+
+    &__container {
+        width: 80%;
+        margin: auto;
+        padding-top: 6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+
+        @include mq.nondesktop {
+            display: none;
+        }
+
+        @include mq.desktop {
+            justify-content: space-between;
+        }
+
+        &__slides {
+            flex-basis: 25%;
+
+            @include mq.desktop {
+                background-color: #292929;
+                height: fit-content;
+                padding-bottom: 2rem;
+                width: 37rem;
+                flex-basis: 30%;
+            }
+
+            &__container {
+                position: relative;
+                height: fit-content;
+
+                &--icon {
+                    margin: 8rem 0 0 3.8rem;
+                }
+            }
+
+
+            &--title {
+                text-align: left;
+                padding: 3.7rem 2rem 0 3.8rem;
+                margin: auto;
+                background-color: $white;
+                font-family: $standard-tt-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2.8rem;
+                line-height: 3.6rem;
+                letter-spacing: -0.12rem;
+                color: #222222;
+            }
+
+            &--description {
+                text-align: left;
+                padding: 2.8rem 5rem 0 3.8rem;
+                font-family: $roboto-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 2.4rem;
+                color: $light-grey;
+            }
+        }
+    }
+}

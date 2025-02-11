@@ -1,0 +1,14 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// SINGLE ROOM CANCELLATION SECTION STYLES
+.cancellationSection {
+    @include mq.desktop {
+        padding-right: 20%;
+        display: block;
+        transform: none;
+    }
+
+    &__text {
+        display: block;
+    }
+}

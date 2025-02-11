@@ -1,0 +1,245 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// ABOUT SECTION STYLES
+.aboutSection {
+
+    @include mq.desktop {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        margin: 15rem 0 10rem 0;
+        // padding-left: 15%;
+        max-width: 70%;
+        margin: auto;
+    }
+
+    &__info {
+        background-color: #F9F9F9;
+
+        @include mq.desktop {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding-left: 7rem;
+            padding-right: 5rem;
+            margin-top: 15rem;
+            z-index: -5;
+            // word-break: break-all;
+            // width: 50%;
+        }
+
+        &--subtitle {
+            margin-top: 6rem;
+            padding: 3rem 1rem 0 2rem;
+            font-family: $archivo-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+            letter-spacing: 0.28rem;
+            color: $light-grey
+        }
+
+        &--title {
+            padding: 2.5rem 1rem 0 2rem;
+            font-family: $standard-tt-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 5.6rem;
+            line-height: 6rem;
+            letter-spacing: -0.12rem;
+            color: #111111;
+        }
+
+        &--paragraph {
+            padding: 1.4rem 2rem 0 2rem;
+            font-family: $archivo-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: $light-grey;
+        }
+
+        &--button {
+            margin: 1.4rem 2.2rem 17.5rem 2rem;
+            border-style: none;
+            height: 6rem;
+            width: fit-content;
+            padding: 2.3rem 5.6rem;
+            background-color: $gold;
+            font-family: $archivo-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 1.5rem;
+            letter-spacing: 0.28rem;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+
+    &__cards {
+
+        @include mq.desktop {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            padding-left: 5%;
+        }
+
+        &__team {
+            position: relative;
+            top: -12rem;
+            width: 70%;
+            margin: auto;
+
+            @include mq.desktop {
+                top: 0;
+                display: flex;
+                flex-direction: column-reverse;
+                width: 100%;
+                margin-right: 3rem;
+                margin-top: 0;
+            }
+
+            &--img {
+                width: 100%;
+                height: 30rem;
+                object-fit: cover;
+
+                @include mq.desktop {
+                    width: 27rem;
+                }
+            }
+
+            &--container {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 100%;
+                height: 30rem;
+                box-shadow: 0px 8px 16px rgba(34, 34, 34, 0.02);
+                text-align: center;
+
+                @include mq.desktop {
+                    margin-bottom: 3rem;
+                }
+
+                &--icons {
+                    height: fit-content;
+                    padding-top: 5rem;
+
+                    &--small {
+                        width: 6.8rem;
+                        height: 5rem;
+                    }
+
+                    &--big {
+                        position: absolute;
+                        left: 47%;
+                        width: 14rem;
+                        height: 10rem;
+                        z-index: -1;
+                    }
+                }
+
+                &--title {
+                    padding-top: 3rem;
+                    height: fit-content;
+                    font-family: $standard-tt-font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 3rem;
+                    line-height: 3rem;
+                    letter-spacing: -0.09rem;
+                    color: $black;
+                }
+
+                &--paragraph {
+                    padding: 2rem 3.5rem 0 3.5rem;
+                    height: fit-content;
+                    font-family: $roboto-font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    line-height: 2.2rem;
+                    color: $black;
+                }
+            }
+        }
+
+        &__room {
+            position: relative;
+            width: 70%;
+            margin: auto;
+            top: -2rem;
+
+            @include mq.desktop {
+                display: flex;
+                flex-direction: column;
+                top: 3rem;
+                margin-top: 0;
+            }
+
+            &--img {
+                width: 100%;
+                height: 30rem;
+                object-fit: cover;
+
+                @include mq.desktop {
+                    width: 27rem;
+                }
+            }
+
+            &--container {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 100%;
+                height: 30rem;
+                background-color: $darker-grey;
+                text-align: center;
+
+                @include mq.desktop {
+                    margin-top: 3rem;
+                }
+
+                &--icons {
+                    height: fit-content;
+                    padding-top: 5rem;
+
+                    &--small {
+                        width: 5.2rem;
+                        height: 5rem;
+                    }
+                }
+
+                &--title {
+                    padding-top: 3rem;
+                    height: fit-content;
+                    font-family: $standard-tt-font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 3rem;
+                    line-height: 3rem;
+                    letter-spacing: -0.09rem;
+                    color: $white;
+                }
+
+                &--paragraph {
+                    padding: 2rem 3.5rem 0 3.5rem;
+                    height: fit-content;
+                    font-family: $roboto-font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    line-height: 2.2rem;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

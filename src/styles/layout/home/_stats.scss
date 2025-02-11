@@ -1,0 +1,59 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// STATS SECTION STYLES
+.statsSection {
+    background-color: $darker-grey;
+    margin-top: 6rem;
+
+    @include mq.desktop {
+        width: 70%;
+        margin: 12rem auto 0 auto;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6rem;
+        padding: 4.8rem 0;
+
+        @include mq.desktop {
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 0;
+        }
+
+        &__stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & img {
+                width: 8rem;
+                height: 8rem;
+            }
+
+            &__title {
+                padding-top: 1.6rem;
+                font-family: $roboto-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 6rem;
+                color: $white;
+
+                &--span {
+                    font-weight: 400;
+                    font-size: 2rem;
+                }
+            }
+
+            &__subtitle {
+                font-family: $roboto-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.4rem;
+                color: $lighter-grey;
+            }
+        }
+    }
+}

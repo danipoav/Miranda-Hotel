@@ -1,0 +1,43 @@
+// Import variables
+@import 'abstracts/variables';
+
+// Import reset & fonts
+@import 'base/reset';
+@import 'base/typography';
+
+// Import components
+@import 'components/header';
+@import 'components/subheader';
+@import 'components/footer';
+@import 'components/buttons';
+@import 'components/featuresSlider';
+
+
+// Import pages layouts
+@import 'layout/home/tour';
+@import 'layout/home/availability';
+@import 'layout/home/aboutUs';
+@import 'layout/home/roomSlider';
+@import 'layout/home/video';
+@import 'layout/home/menu';
+@import 'layout/home/stats';
+
+@import 'layout/about/video';
+@import 'layout/about/restaurant';
+@import 'layout/about/facilities';
+@import 'layout/about/counter';
+
+@import 'layout/rooms/roomsList';
+@import 'layout/rooms/roomInfo';
+@import 'layout/rooms/roomAvailavility';
+@import 'layout/rooms/roomAmenities';
+@import 'layout/rooms/roomFounder';
+@import 'layout/rooms/roomRelated';
+@import 'layout/rooms/roomCancellation';
+
+@import 'layout/offers/price';
+@import 'layout/offers/popular';
+
+
+@import 'layout/contact/details';
+@import 'layout/contact/form';

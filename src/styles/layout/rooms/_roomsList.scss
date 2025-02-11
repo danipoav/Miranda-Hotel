@@ -1,0 +1,170 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// ROOMS LIST SLIDER SECTION STYLES
+.swiperRoomsList {
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 4.4rem 2rem 0 2rem;
+
+    @include mq.desktop {
+        max-width: 80%;
+        margin: auto;
+        text-align: unset;
+    }
+
+    &-pagination {
+        @include mq.desktop {
+            text-align: center;
+        }
+
+        .swiper-pagination-bullet {
+            height: 4rem;
+            width: 4rem;
+            border-radius: 0;
+            background-color: transparent;
+            text-align: center;
+            vertical-align: middle;
+            font-family: $roboto-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 4rem;
+            color: $darker-grey;
+            opacity: 1;
+
+            &-active {
+                background-color: $gold;
+                color: $white;
+            }
+        }
+    }
+
+    .swiper-slide {
+        padding: 0 2rem;
+
+        @include mq.desktop {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3rem;
+        }
+
+        &>div {
+            @include mq.desktop {
+                width: 30%;
+            }
+        }
+    }
+
+    .roomSlider__slides {
+        position: relative;
+        max-width: 100%;
+        height: fit-content;
+
+        &--extras {
+            position: absolute;
+            width: 30rem;
+            height: 8rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 22rem;
+            bottom: unset;
+            z-index: 10;
+
+            @include mq.desktop {
+                opacity: 1;
+                bottom: unset;
+                top: 22rem;
+                max-width: 30rem;
+                width: 100%;
+            }
+        }
+
+        &--roomImg {
+            width: 100%;
+            height: 25rem;
+            object-fit: cover;
+            max-width: 100%;
+        }
+
+        &--title {
+            position: relative;
+            width: 90%;
+            padding: 0;
+            margin: 4.9rem 2rem 0 2rem;
+            top: 0;
+            background-color: $white;
+            font-family: $standard-tt-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.8rem;
+            line-height: 3.6rem;
+            letter-spacing: -0.12rem;
+            color: #222222;
+
+            @include mq.desktop {
+                opacity: 1;
+                text-align: center;
+            }
+        }
+
+        &--description {
+            padding: 1.6rem 5rem 2rem 5rem;
+            font-family: $roboto-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: $light-grey;
+
+            @include mq.desktop {
+                opacity: 1;
+                text-align: center;
+            }
+        }
+
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            padding-bottom: 2rem;
+
+            &--price {
+                padding: 0 0 2rem 0;
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 1.7rem;
+                color: $gold;
+
+                &--perNight {
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                    line-height: 1.7rem;
+                }
+            }
+
+            &--bookNow {
+                text-decoration: none;
+                padding: 0 0 2rem 0;
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 1.7rem;
+                color: #BDBDBD;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $black;
+                }
+            }
+        }
+
+    }
+}

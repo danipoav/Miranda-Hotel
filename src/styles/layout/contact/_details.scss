@@ -1,0 +1,76 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// CONTACT DETAILS SECTION STYLES
+.contactDetailsSection {
+    width: 90%;
+    margin: 7rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4.7rem;
+
+    @include mq.desktop {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 80%;
+    }
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 2.7rem;
+        width: 100%;
+        height: 19rem;
+
+        @include mq.desktop {
+            width: 30%;
+        }
+
+        &__img {
+            width: 4rem;
+            height: 4rem;
+            margin-top: 5rem;
+        }
+
+        &__subcontainer {
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+            gap: 1.5rem;
+            padding-top: 5rem;
+
+            &__header {
+                font-family: $standard-tt-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 2.4rem;
+                color: $darker-grey;
+            }
+
+            &__text {
+                font-family: $roboto-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                color: $light-grey;
+            }
+        }
+
+        &__number {
+            position: absolute;
+            bottom: -4rem;
+            right: 0;
+            font-family: $roboto-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20rem;
+            line-height: 23.4rem;
+            letter-spacing: -0.6rem;
+            color: $lightest-grey;
+            z-index: -1;
+        }
+    }
+}

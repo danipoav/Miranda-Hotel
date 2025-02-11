@@ -1,0 +1,80 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// SINGLE ROOM AVAILABILITY SECTION STYLES
+.singleRoomAvailabilitySection {
+    width: 90%;
+    margin: auto;
+
+    @include mq.desktop {
+        width: 30%;
+        display: inline-block;
+        margin-right: 10%;
+        vertical-align: top;
+        margin-top: 15rem;
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        letter-spacing: 0.054rem;
+        color: $darker-grey;
+    }
+
+    &__form {
+        width: 90%;
+        margin: auto;
+        padding-top: 3.5rem;
+
+        &__block {
+            display: flex;
+            flex-direction: column;
+
+            & label {
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.4rem;
+                line-height: 1.5rem;
+                color: $darker-grey;
+            }
+
+            & input {
+                margin: 1.3rem 0 1.9rem 0;
+                padding: 2.4rem 2.7rem 2.1rem 2.9rem;
+                border-style: none;
+                background-color: #F8F8F8;
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 1.5rem;
+                color: $light-grey;
+
+                &::-webkit-calendar-picker-indicator {
+                    height: 2rem;
+                    width: 2rem;
+                    filter: invert(46%) sepia(0%) saturate(667%) hue-rotate(141deg) brightness(102%) contrast(91%);
+                }
+            }
+        }
+    }
+
+    &__text {
+        padding-top: 4.8rem;
+        font-family: $roboto-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.054rem;
+        color: $light-grey;
+
+        @include mq.desktop {
+            display: none;
+        }
+    }
+}

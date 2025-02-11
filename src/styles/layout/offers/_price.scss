@@ -1,0 +1,243 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// OFFERS ROOM SECTION STYLES
+.offerRoomSection {
+    width: 100%;
+    padding-top: 4.8rem;
+    padding-bottom: 1rem;
+
+    @include mq.desktop {
+        width: 80%;
+        margin: auto;
+    }
+
+    &__room {
+        width: 90%;
+        margin: auto;
+        box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+        position: relative;
+        margin-bottom: 3.2rem;
+
+        &__priceContainer {
+            position: absolute;
+            padding-right: 1.5rem;
+            bottom: 68rem;
+            right: 0;
+            width: 14.5rem;
+            text-align: right;
+            text-shadow: 2px 1px 1px black;
+
+            @include mq.desktop {
+                display: none;
+            }
+
+            &--gold {
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 2.3rem;
+                line-height: 2.5rem;
+                color: $white;
+                text-decoration: line-through;
+                display: inline-block;
+
+            }
+
+            &--perNightGold {
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.3rem;
+                line-height: 1.5rem;
+                color: $white;
+                text-decoration: line-through;
+                display: inline-block;
+            }
+
+            &--red {
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 3rem;
+                line-height: 3.3rem;
+                color: #DE5777;
+                display: inline-block;
+            }
+
+            &--perNightRed {
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 2.3rem;
+                color: #DE5777;
+                display: inline-block;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            min-height: 17rem;
+            height: fit-content;
+
+            @include mq.desktop {
+                z-index: -1;
+                height: fit-content;
+            }
+        }
+
+        &__bigContainer {
+            width: 90%;
+            margin: auto;
+
+            @include mq.desktop {
+                position: relative;
+                top: -4rem;
+                background-color: $white;
+                border-top: 6px solid $gold;
+                padding: 3rem;
+            }
+
+            // priceContainer for desktop version
+            &__priceContainerDesktop {
+                position: absolute;
+                padding-right: 1.5rem;
+                top: 10rem;
+                right: 0;
+                width: 14.5rem;
+                text-align: right;
+                background-color: rgba(17, 17, 17, 0.5);
+
+                @include mq.desktop {
+                    display: block;  // aqui cuidao
+                    top: 5rem;
+                    right: 2.5rem;
+                    background-color: $white;
+                }
+
+                @include mq.nondesktop {  // para qeu desaparezca
+                    display: none;
+                }
+
+                &--gold {
+                    font-family: $archivo-font;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 2.3rem;
+                    line-height: 2.5rem;
+                    color: $gold;
+                    text-decoration: line-through;
+                    display: inline-block;
+
+                }
+
+                &--perNightGold {
+                    font-family: $archivo-font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.3rem;
+                    line-height: 1.5rem;
+                    color: $gold;
+                    text-decoration: line-through;
+                    display: inline-block;
+                }
+
+                &--red {
+                    font-family: $archivo-font;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 3rem;
+                    line-height: 3.3rem;
+                    color: #DE5777;
+                    display: inline-block;
+                }
+
+                &--perNightRed {
+                    font-family: $archivo-font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 2rem;
+                    line-height: 2.3rem;
+                    color: #DE5777;
+                    display: inline-block;
+                }
+            }
+
+            &__subtitle {
+                padding-top: 1.6rem;
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.4rem;
+                line-height: 1.5rem;
+                letter-spacing: 0.28rem;
+                color: $light-grey;
+            }
+
+            &__title {
+                margin-top: 1.2rem;
+                font-family: $standard-tt-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 4rem;
+                line-height: 4.8rem;
+                letter-spacing: -0.144rem;
+                color: $darker-grey;
+            }
+
+            &__separation {
+                width: 100%;
+                height: 3px;
+                background-color: #ECECEC;
+                display: none;
+
+                @include mq.desktop {
+                    display: block;
+                }
+            }
+
+            &__smallContainer {
+                padding-top: 1.6rem;
+
+                &__description {
+                    font-family: $roboto-font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    line-height: 2.4rem;
+                    color: $light-grey;
+
+                    @include mq.desktop {
+                        display: inline-block;
+                        width: 40%;
+                    }
+                }
+
+                &__amenitiesContainer {
+                    padding-top: 2.4rem;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    gap: 1.7rem;
+
+                    @include mq.desktop {
+                        display: inline-flex;
+                        width: 50%;
+                        margin-left: 5%;
+                        vertical-align: top;
+                    }
+
+                    & div {
+                        width: 40%;
+                    }
+                }
+
+                & .btn {
+                    margin-top: 2.5rem;
+                    margin-bottom: 3.2rem;
+                }
+            }
+        }
+    }
+}

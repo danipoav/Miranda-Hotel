@@ -1,0 +1,81 @@
+@use "../abstracts/mediaQueries" as mq;
+
+// ABOUT US SECTION STYLES
+.subheaderSection {
+    position: relative;
+    background-color: $dark-grey;
+    max-width: 100%;
+
+    &__subtitle {
+        padding: 14rem 0 0 2rem;
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        letter-spacing: 0.28rem;
+        color: $white;
+
+        @include mq.desktop {
+            padding: 14rem 0 0 15%;
+        }
+    }
+
+    &__title {
+        padding: 1.6rem 0 9.6rem 2rem;
+        font-family: $standard-tt-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5.6rem;
+        line-height: 6rem;
+        letter-spacing: -0.12rem;
+        color: $white;
+        max-width: 95%;
+
+        @include mq.desktop {
+            padding: 1.6rem 0 9.6rem 15%;
+        }
+    }
+
+    &__navigation {
+        padding: 1.6rem 1rem;
+        position: absolute;
+        right: 2rem;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        height: 5rem;
+        min-width: 16rem;
+        width: fit-content;
+        background-color: $white;
+
+        @include mq.desktop {
+            right: 15%;
+            min-width: 16rem;
+            width: fit-content;
+        }
+
+        &__page {
+            padding: 0 1rem;
+            font-family: $archivo-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 1.7rem;
+            letter-spacing: -0.048rem;
+            color: $darker-grey;
+
+            &--active {
+                padding: 0 1rem;
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 1.7rem;
+                letter-spacing: -0.048rem;
+                border-left: 2px solid $darker-grey;
+                color: $gold;
+            }
+        }
+    }
+}

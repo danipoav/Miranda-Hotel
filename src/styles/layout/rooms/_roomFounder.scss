@@ -1,0 +1,88 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// SINGLE ROOM EMPLOYEE
+.employeeSection {
+    &__container {
+        padding-top: 8rem;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+
+        @include mq.desktop {
+            width: 25%;
+            margin-left: 10%;
+            margin-top: 9rem;
+            padding: 6rem 2.5rem 4rem 2.5rem;
+            box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.27);
+        }
+
+        &__imgContainer {
+            position: relative;
+            width: 150px;
+            margin: 0 auto;
+
+            @include mq.tablet {
+                width: 30%;
+                margin: auto;
+            }
+
+            @include mq.desktop {
+                width: 100%;
+            }
+
+            &__portrait {
+                width: 15rem;
+                height: 15rem;
+                border-radius: 50%;
+            }
+
+            &__checkContainer {
+                position: absolute;
+                width: 4.5rem;
+                height: 4.5rem;
+                background-color: $gold;
+                border: 4px solid $white;
+                border-radius: 50%;
+                text-align: center;
+                top: 0;
+                left: 75%;
+
+                &__check {
+                    padding-top: 1rem;
+                }
+            }
+        }
+
+        &__name {
+            margin-top: 3.8rem;
+            font-family: $standard-tt-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 3rem;
+            line-height: 3rem;
+            letter-spacing: -0.09rem;
+            color: $darker-grey;
+        }
+
+        &__position {
+            margin-top: 1.5rem;
+            font-family: $archivo-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 1.5rem;
+            letter-spacing: 0.28rem;
+            color: $gold;
+        }
+
+        &__text {
+            margin-top: 2.5rem;
+            font-family: $archivo-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: $light-grey;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// VIDEO SECTION STYLES
+.videoSection {
+    background-color: $darker-grey;
+    height: fit-content;
+
+    @include mq.desktop {
+        background: linear-gradient(90deg, $darker-grey 70%, $gold 60%);
+        margin-top: 10rem;
+        position: relative;
+    }
+
+    &__subtitle {
+        padding: 6.4rem 0 0 2.4rem;
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.28rem;
+        color: $gold;
+
+        @include mq.desktop {
+            padding: 13rem 2rem 0 15%;
+        }
+    }
+
+    &__title {
+        padding: 3.2rem 2rem 0 2.4rem;
+        font-family: $standard-tt-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5.6rem;
+        line-height: 6rem;
+        letter-spacing: -0.12rem;
+        color: $white;
+
+        @include mq.desktop {
+            width: 50%;
+            padding: 3.5rem 2rem 0 15%;
+        }
+    }
+
+    &__description {
+        padding: 1.6rem 2rem 0 2.4rem;
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: #C2C2C2;
+
+        @include mq.desktop {
+            max-width: 50%;
+            padding: 2.9rem 2rem 0 15%;
+        }
+    }
+
+    &__videoContainer {
+        padding-top: 2rem;
+        width: 90%;
+        height: 30rem;
+        margin: auto;
+
+        & video{
+            width: 100%;
+            height: 100%;
+        }
+
+        @include mq.desktop {
+            position: absolute;
+            padding: 0;
+            width: 40rem;
+            height: 30rem;
+            top: 0;
+            bottom: 0;
+            right: 10%;
+            margin: auto;
+        }
+
+        @include mq.bigdesktop {
+            position: absolute;
+            padding: 0;
+            width: 60rem;
+            height: 40rem;
+            top: 0;
+            bottom: 0;
+            right: 10%;
+            margin: auto;
+        }
+    }
+
+    &__button {
+        margin: 3.6rem 2.2rem 4.8rem 2rem;
+        border-style: none;
+        height: 6rem;
+        width: fit-content;
+        padding: 2.3rem 5.6rem;
+        background-color: $gold;
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.28rem;
+        color: $white;
+        cursor: pointer;
+
+        @include mq.desktop {
+            margin: 2.3rem 2rem 13rem 15%;
+        }
+    }
+}

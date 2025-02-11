@@ -1,0 +1,110 @@
+@use "../../abstracts/mediaQueries" as mq;
+
+// TAKE A TOUR SECTION STYLES
+.tourSection {
+    padding: 14rem 1rem 7.5rem 2rem;
+    background-color: $dark-grey;
+
+    @include mq.desktop {
+        padding: 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        &--subtitleDesktop {
+            display: none;
+            font-family: $roboto-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: $white;
+
+            @include mq.desktop {
+                display: inline-block;
+                background-color: $darker-grey;
+                height: 6.5rem;
+                padding: 0.5rem 0 0 15%;
+                width: 100%;
+            }
+        }
+
+        &--subtitle {
+            width: 80%;
+            font-family: $archivo-font;
+            font-weight: 700;
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+            letter-spacing: 0.28rem;
+            color: $white;
+            padding-bottom: 4rem;
+
+            @include mq.desktop {
+                padding-top: 12rem;
+                padding-left: 20%;
+            }
+        }
+
+        &--title {
+            font-family: $standard-tt-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 5.6rem;
+            line-height: 6rem;
+            letter-spacing: -0.12rem;
+            color: $white;
+            padding-bottom: 4rem;
+
+            @include mq.desktop {
+                padding-left: 20%;
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            @include mq.desktop {
+                flex-direction: row;
+                gap: 2rem;
+                padding-left: 20%;
+                padding-bottom: 10rem;
+            }
+
+            &--tour {
+                border-style: none;
+                height: 6rem;
+                width: 22rem;
+                padding: 2.1rem 4.5rem;
+                background-color: $gold;
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.4rem;
+                line-height: 1.5rem;
+                letter-spacing: 0.28rem;
+                color: $white;
+                cursor: pointer;
+            }
+
+            &--learn {
+                border: 2px solid rgba(255, 255, 255, 0.33);
+                height: 6rem;
+                width: 22rem;
+                padding: 2.1rem 4.5rem;
+                background-color: $dark-grey;
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.4rem;
+                line-height: 1.5rem;
+                letter-spacing: 0.28rem;
+                color: $white;
+                cursor: pointer;
+            }
+        }
+    }
+}
