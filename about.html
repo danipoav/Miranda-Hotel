@@ -3,220 +3,550 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/about.css">
-    <script defer src="js/showNav.js"></script>
-    <title>About us</title>
+    <title>Hotel Miranda - About us</title>
+    <link rel="icon" type="image/svg+xml" href="src/assets/icons/favicon.svg">
+    <link rel="stylesheet" type="text/css" href="src/styles/scss/styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 </head>
 
 <body>
-    <nav class="header__nav">
-        <img id="nav--button" class="header__nav--menu" src="images/nav.png" alt="navIcon">
-        <div class="header__nav__logo">
-            <h1>H</h1>
-        </div>
-        <div class="header__nav--title">
-            <h1>Hotel</h1>Miranda
-        </div>
-        <div class="header__nav__icons">
-            <img src="images/person.png" alt="person">
-            <img src="images/search.png" alt="search">
-        </div>
-    </nav>
-    <nav id="nav--Links" class="header__nav__links none">
-        <a href="about.html">About Us</a>
-        <a href="rooms.html">Rooms</a>
-        <a href="offers.html">Offers</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
     <header class="header">
-        <section class="header__content">
-            <h2>THE ULTIMATE LUXURY</h2>
-            <h1>About Us</h1>
-            <div class="header__content__links">
-                <a href="index.html">Home </a> | <a class="veige" href="#"> About</a>
+        <nav class="nav">
+            <div class="nav__container">
+                <div class="nav__container nav__container__menu">
+                    <div class="nav__container__menu nav__container__menu--burger">
+                        <img id="mobileMenuBurguer" src="src/assets/icons/menu.svg" alt="Menu icon">
+                    </div>
+                    <div class="nav__container__menu nav__container__menu--logo">
+                        <div class="nav__container__menu--logo nav__container__menu--logo--favicon">
+                            <span>H</span>
+                        </div>
+                        <a href="index.html">
+                            <img class="nav__container__menu--logo nav__container__menu--logo--title"
+                                src="src/assets/icons/logo.svg" alt="Hotel Title">
+                        </a>
+                    </div>
+                </div>
+                <div class="nav__menu">
+                    <a href="about.html" class="nav__item">About Us</a>
+                    <a href="rooms.html" class="nav__item">Rooms</a>
+                    <a href="offers.html" class="nav__item">Offers</a>
+                    <a href="contact.html" class="nav__item">Contact</a>
+                </div>
+                <div>
+                    <div class="nav__container nav__container__functionalities">
+                        <img class="nav__container__functionalities--person" src="src/assets/icons/person.svg"
+                            alt="User icon">
+                        <img class="nav__container__functionalities--search" src="src/assets/icons/search.svg"
+                            alt="Search icon">
+                    </div>
+                </div>
             </div>
-        </section>
+        </nav>
     </header>
 
+
     <main>
-        <section class="info">
-            <div class="info__video"></div>
-            <h1 class="info--title">Hello. Our hotel has been present for over 20 years. We make the best for all our
-                customers.
-            </h1>
-
-            <div class="info__picture">
-                <div class="info__picture__content">
-                    <img src="images/coffe.png" alt="coffe">
-                    <h2 class="info__picture__content--title">BREAKFAST</h2>
-                </div>
-
-                <div class="info__picture__content beige">
-                    <img src="images/plane.png" alt="plane">
-                    <h2 class="info__picture__content--title">AIRPORT PICKUP</h2>
-                </div>
-
-                <div class="info__picture__content">
-                    <img src="images/map.png" alt="map">
-                    <h2 class="info__picture__content--title">CITY GUIDE</h2>
-                </div>
-
-                <div class="info__picture__content">
-                    <img src="images/room.png" alt="coffe">
-                    <h2 class="info__picture__content--title">LUXURY ROOM</h2>
-                </div>
-            </div>
-        </section>
-
-        <section class="restaurant">
-            <div class="restaurant__picture"></div>
-            <h2 class="restaurant--subtitle">RESTAURANT</h2>
-            <h1 class="restaurant--title">Get Restaurant Facilities & Many Other More</h1>
-            <p class="restaurant--text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+        <section class="subheaderSection">
+            <p class="tourSection__container--subtitleDesktop">
+                We Make You Feel Comfortable
             </p>
-            <button class="restaurant--button">
-                TAKE A TOUR
-            </button>
+            <p class="subheaderSection__subtitle">THE ULTIMATE LUXURY</p>
+            <h1 class="subheaderSection__title">About Us</h1>
+            <div class="subheaderSection__navigation">
+                <p class="subheaderSection__navigation__page">Home</p>
+                <p class="subheaderSection__navigation__page--active">About</p>
+            </div>
         </section>
 
-        <section class="facilities">
-            <h2 class="facilities--subtitle">FACILITIES</h2>
-            <h1 class="facilities--title">Core Features</h1>
-            <div class="facilities__number">
-                <h1 class="facilities__number--number">01</h1>
-                <img class="facilities__number--img" src="images/stars.png" alt="star">
 
-                <h2 class="facilities--title2">Have High Rating</h2>
-                <p class="facilities--text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna..
+
+        <section class="aboutVideoSection">
+            <div class="aboutVideoSection__videoContainer">
+                <video autoplay muted loop controls>
+                    <source src="src/assets/video/video-hotel.mp4" type="video/mp4">
+                </video>
+            </div>
+            <h1 class="aboutVideoSection__title">
+                Hello. Our hotel has been present for over 20 years. We make the best
+                for all our customers.
+            </h1>
+            <div class="aboutVideoSection__container">
+                <div class="aboutVideoSection__container__service">
+                    <img class="aboutVideoSection__container__service__icon" src="src/assets/icons/breakfast.svg"
+                        alt="Service icon" />
+                    <h1 class="aboutVideoSection__container__service__title">
+                        BREAKFAST
+                    </h1>
+                </div>
+                <div class="aboutVideoSection__container__service">
+                    <img class="aboutVideoSection__container__service__icon" src="src/assets/icons/airport.svg"
+                        alt="Service icon" />
+                    <h1 class="aboutVideoSection__container__service__title">
+                        AIRPORT PICKUP
+                    </h1>
+                </div>
+                <div class="aboutVideoSection__container__service">
+                    <img class="aboutVideoSection__container__service__icon" src="src/assets/icons/guide.svg"
+                        alt="Service icon" />
+                    <h1 class="aboutVideoSection__container__service__title">
+                        CITY GUIDE
+                    </h1>
+                </div>
+                <div class="aboutVideoSection__container__service--hide">
+                    <img class="aboutVideoSection__container__service--hide__icon" src="src/assets/icons/bbq.svg"
+                        alt="Service icon" />
+                    <h1 class="aboutVideoSection__container__service--hide__title">
+                        BBQ PARTY
+                    </h1>
+                </div>
+                <div class="aboutVideoSection__container__service">
+                    <img class="aboutVideoSection__container__service__icon" src="src/assets/icons/luxury.svg"
+                        alt="Service icon" />
+                    <h1 class="aboutVideoSection__container__service__title">
+                        LUXURY ROOM
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="restaurantSection">
+            <img src="src/assets/imgs/restaurant-services.jpg" alt="Restaurant picture" class="restaurantSection__img" />
+            <div class="restaurantSection__container">
+                <p class="restaurantSection__container__subtitle">RESTAURANT</p>
+                <h1 class="restaurantSection__container__title">
+                    Get Restaurant Facilities & Many Other More
+                </h1>
+                <p class="restaurantSection__container__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip.
                 </p>
-            </div>
-            <div class="facilities__dots">
-                <div class="facilities__dots--dot color"></div>
-                <div class="facilities__dots--dot"></div>
-                <div class="facilities__dots--dot"></div>
-                <div class="facilities__dots--dot"></div>
-                <div class="facilities__dots--dot"></div>
-                <div class="facilities__dots--dot"></div>
+                <button class="btn">TAKE A TOUR</button>
             </div>
         </section>
 
-        <section class="counter">
-            <h2 class="counter--subtitle">COUNTER</h2>
-            <h1 class="counter--title">Some Fun Facts</h1>
 
-            <div class="counter__content">
-                <img src="images/kid.png" alt="kid">
-                <div class="counter__content__text">
-                    <h1 class="counter__content__text--title">8000</h1>
-                    <h2 class="counter__content__text--subtitle">Happy Users</h2>
+
+        <!-- Facilities Section -->
+        <section class="featuresSection dark">
+            <p class="featuresSection__subtitle dark__subtitle">FACILITIES</p>
+            <h1 class="featuresSection__title dark__title">Core Features</h1>
+            <div class="swiperFeatures featuresSection__slides dark__slides">
+                <div class="swiper-wrapper dark__swiper-wrapper">
+                    <div class="swiper-slide dark__swiper-slide">
+                        <div class="featuresSection__slides__container">
+                            <img class="featuresSection__slides__container--icon" src="src/assets/icons/rating.svg"
+                                alt="Rating icon" />
+                            <div class="featuresSection__slides__container--number dark__slides--number">
+                                01
+                            </div>
+                        </div>
+
+                        <h1 class="featuresSection__slides--title dark__slides--title">
+                            Have High Rating
+                        </h1>
+                        <p class="featuresSection__slides--description dark__slides--description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                    <div class="swiper-slide dark__swiper-slide">
+                        <div class="featuresSection__slides__container">
+                            <img class="featuresSection__slides__container--icon" src="src/assets/icons/hours.svg"
+                                alt="Hours icon" />
+                            <div class="featuresSection__slides__container--number dark__slides--number">
+                                02
+                            </div>
+                        </div>
+
+                        <h1 class="featuresSection__slides--title dark__slides--title">
+                            Quiet Hours
+                        </h1>
+                        <p class="featuresSection__slides--description dark__slides--description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                    <div class="swiper-slide dark__swiper-slide">
+                        <div class="featuresSection__slides__container">
+                            <img class="featuresSection__slides__container--icon" src="src/assets/icons/locations.svg"
+                                alt="Location icon" />
+                            <div class="featuresSection__slides__container--number dark__slides--number">
+                                03
+                            </div>
+                        </div>
+
+                        <h1 class="featuresSection__slides--title dark__slides--title">
+                            Best Locations
+                        </h1>
+                        <p class="featuresSection__slides--description dark__slides--description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                    <div class="swiper-slide dark__swiper-slide">
+                        <div class="featuresSection__slides__container">
+                            <img class="featuresSection__slides__container--icon"
+                                src="src/assets/icons/cancellation.svg" alt="Cancellation icon" />
+                            <div class="featuresSection__slides__container--number dark__slides--number">
+                                04
+                            </div>
+                        </div>
+
+                        <h1 class="featuresSection__slides--title dark__slides--title">
+                            Free Cancellation
+                        </h1>
+                        <p class="featuresSection__slides--description dark__slides--description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                    <div class="swiper-slide dark__swiper-slide">
+                        <div class="featuresSection__slides__container">
+                            <img class="featuresSection__slides__container--icon" src="src/assets/icons/payment.svg"
+                                alt="Payment icon" />
+                            <div class="featuresSection__slides__container--number dark__slides--number">
+                                05
+                            </div>
+                        </div>
+
+                        <h1 class="featuresSection__slides--title dark__slides--title">
+                            Payment Options
+                        </h1>
+                        <p class="featuresSection__slides--description dark__slides--description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
+                    <div class="swiper-slide dark__swiper-slide">
+                        <div class="featuresSection__slides__container">
+                            <img class="featuresSection__slides__container--icon" src="src/assets/icons/offers.svg"
+                                alt="Offers icon" />
+                            <div class="featuresSection__slides__container--number dark__slides--number">
+                                06
+                            </div>
+                        </div>
+
+                        <h1 class="featuresSection__slides--title dark__slides--title">
+                            Special Offers
+                        </h1>
+                        <p class="featuresSection__slides--description dark__slides--description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna..
+                        </p>
+                    </div>
                 </div>
-                <img class="arrow" src="images/arrow.png" alt="arrow">
+                <div class="swiperFeatures-pagination"></div>
             </div>
+            <div class="featuresSection__container dark__container">
+                <div class="featuresSection__container__slides dark__container__slides">
+                    <div class="featuresSection__container__slides__container dark__container__slides__container">
+                        <img class="featuresSection__container__slides__container--icon"
+                            src="src/assets/icons/rating.svg" alt="Rating icon" />
+                        <div class="featuresSection__slides__container--number dark__slides--number">
+                            01
+                        </div>
+                    </div>
 
-            <div class="counter__content">
-                <img src="images/finger.png" alt="finger">
-                <div class="counter__content__text">
-                    <h1 class="counter__content__text--title">10M</h1>
-                    <h2 class="counter__content__text--subtitle">Reviews & Appriciate</h2>
+                    <h1 class="featuresSection__container__slides--title dark__slides--title">
+                        Have High Rating
+                    </h1>
+                    <p class="featuresSection__container__slides--description dark__slides--description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna..
+                    </p>
                 </div>
-                <img class="arrow" src="images/arrow.png" alt="arrow">
-            </div>
+                <div class="featuresSection__container__slides dark__container__slides">
+                    <div class="featuresSection__container__slides__container">
+                        <img class="featuresSection__container__slides__container--icon"
+                            src="src/assets/icons/hours.svg" alt="Hours icon" />
+                        <div class="featuresSection__slides__container--number dark__slides--number">
+                            02
+                        </div>
+                    </div>
 
-            <div class="counter__content">
-                <img src="images/world.png" alt="world">
-                <div class="counter__content__text">
-                    <h1 class="counter__content__text--title">100</h1>
-                    <h2 class="counter__content__text--subtitle">Country Coverage</h2>
+                    <h1 class="featuresSection__container__slides--title dark__slides--title">
+                        Quiet Hours
+                    </h1>
+                    <p class="featuresSection__container__slides--description dark__slides--description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna..
+                    </p>
                 </div>
-                <img class="arrow" src="images/arrow.png" alt="arrow">
+                <div class="featuresSection__container__slides dark__container__slides">
+                    <div class="featuresSection__container__slides__container">
+                        <img class="featuresSection__container__slides__container--icon"
+                            src="src/assets/icons/locations.svg" alt="Location icon" />
+                        <div class="featuresSection__slides__container--number dark__slides--number">
+                            03
+                        </div>
+                    </div>
+
+                    <h1 class="featuresSection__container__slides--title dark__slides--title">
+                        Best Locations
+                    </h1>
+                    <p class="featuresSection__container__slides--description dark__slides--description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna..
+                    </p>
+                </div>
+                <div class="featuresSection__container__slides dark__container__slides">
+                    <div class="featuresSection__container__slides__container">
+                        <img class="featuresSection__container__slides__container--icon"
+                            src="src/assets/icons/cancellation.svg" alt="Cancellation icon" />
+                        <div class="featuresSection__slides__container--number dark__slides--number">
+                            04
+                        </div>
+                    </div>
+
+                    <h1 class="featuresSection__container__slides--title dark__slides--title">
+                        Free Cancellation
+                    </h1>
+                    <p class="featuresSection__container__slides--description dark__slides--description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna..
+                    </p>
+                </div>
+                <div class="featuresSection__container__slides dark__container__slides">
+                    <div class="featuresSection__container__slides__container">
+                        <img class="featuresSection__container__slides__container--icon"
+                            src="src/assets/icons/payment.svg" alt="Payment icon" />
+                        <div class="featuresSection__slides__container--number dark__slides--number">
+                            05
+                        </div>
+                    </div>
+
+                    <h1 class="featuresSection__container__slides--title dark__slides--title">
+                        Payment Options
+                    </h1>
+                    <p class="featuresSection__container__slides--description dark__slides--description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna..
+                    </p>
+                </div>
+                <div class="featuresSection__container__slides dark__container__slides">
+                    <div class="featuresSection__container__slides__container">
+                        <img class="featuresSection__container__slides__container--icon"
+                            src="src/assets/icons/offers.svg" alt="Offers icon" />
+                        <div class="featuresSection__slides__container--number dark__slides--number">
+                            06
+                        </div>
+                    </div>
+
+                    <h1 class="featuresSection__container__slides--title dark__slides--title">
+                        Special Offers
+                    </h1>
+                    <p class="featuresSection__container__slides--description dark__slides--description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna..
+                    </p>
+                </div>
             </div>
-
-            <div class="counter__image"></div>
-
-            <div class="counter__dots">
-                <div class="counter__dots--dot active"></div>
-                <div class="counter__dots--dot"></div>
-            </div>
-
         </section>
+
+
+
+        <section class="counterSection">
+            <p class="counterSection__subtitle">COUNTER</p>
+            <h1 class="counterSection__title">Some Fun Facts</h1>
+            <div class="counterSection__container">
+                <img class="counterSection__container__icon" src="src/assets/icons/happy.svg" alt="Facts icon" />
+                <div class="counterSection__container__subContainer">
+                    <h1 class="counterSection__container__subContainer__number">
+                        8000
+                    </h1>
+                    <p class="counterSection__container__subContainer__text">
+                        Happy Users
+                    </p>
+                </div>
+                <img class="counterSection__container__arrow" src="src/assets/icons/arrow.svg" alt="Facts icon" />
+            </div>
+            <div class="counterSection__container">
+                <img class="counterSection__container__icon" src="src/assets/icons/review.svg" alt="Facts icon" />
+                <div class="counterSection__container__subContainer">
+                    <h1 class="counterSection__container__subContainer__number">10M</h1>
+                    <p class="counterSection__container__subContainer__text">
+                        Reviews & Appriciate
+                    </p>
+                </div>
+                <img class="counterSection__container__arrow" src="src/assets/icons/arrow.svg" alt="Facts icon" />
+            </div>
+            <div class="counterSection__container">
+                <img class="counterSection__container__icon" src="src/assets/icons/country.svg" alt="Facts icon" />
+                <div class="counterSection__container__subContainer">
+                    <h1 class="counterSection__container__subContainer__number">100</h1>
+                    <p class="counterSection__container__subContainer__text">
+                        Country Coverage
+                    </p>
+                </div>
+                <img class="counterSection__container__arrow" src="src/assets/icons/arrow.svg" alt="Facts icon" />
+            </div>
+            <div class="swiperMenuImages counterSection__images">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="swiperMenuImages__img" src="src/assets/imgs/restaurant-food1.jpg" alt="Reception image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiperMenuImages__img" src="src/assets/imgs/restaurant-food2.jpg" alt="Reception image" />
+                    </div>
+                </div>
+                <div class="swiperMenuImages-pagination"></div>
+            </div>
+            <div class="menuSection__imagesDesktop">
+                <img class="swiperMenuImages__img" src="src/assets/imgs/restaurant-food1.jpg" alt="Reception image" />
+                <img class="swiperMenuImages__img" src="src/assets/imgs/restaurant-food2.jpg" alt="Reception image" />
+            </div>
+        </section>
+
     </main>
 
-    <footer class="footer">
-        <div class="query__title">
-            <div class="footer__title">
-                <div class="footer__title--H">
-                    H
-                </div>
-                <h1 class="footer__title--title">HOTEL
-                    <span>MIRANDA</span>
-                </h1>
-            </div>
-            <p class="footer--text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor
-                incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
-            </p>
-            <div class="footer__icons">
-                <img src="images/fb.png " alt="facebook">
-                <img class="X" src="images/x.png " alt="tw">
-                <img src="images/benace.png " alt="be">
-                <img src="images/link.png " alt="in">
-                <img src="images/yt.png " alt="yt">
-            </div>
-        </div>
-        <div class="query__list">
-            <h2 class="footer--subtitle">Services.</h2>
-            <div class="footer__list">
-                <ul>
-                    <li>+ Resturent & Bar</li>
-                    <li>+ Swimming Pool</li>
-                    <li>+ Wellness & Spa</li>
-                    <li>+ Restaurant</li>
-                    <li>+ Conference Room</li>
-                    <li>+ Coctail Party House</li>
-                </ul>
-                <ul class="query__ul">
-                    <li>+ Gaming Zone</li>
-                    <li>+ Marrige Party </li>
-                    <li>+ Party Planning </li>
-                    <li>+ Tour Consultancy</li>
-                </ul>
-            </div>
-        </div>
-        <div class="query__contact">
-            <h2 class="footer--subtitle">Contact Us.</h2>
 
-            <div class="footer__contact">
-                <img src="images/TELEFON.png" alt="tel">
-                <h2 class="footer__contact--title">Phone Number
-                    <span>+634 91 43 22</span>
-                </h2>
+    <footer class="footer">
+        <div class="footer__container1">
+            <div class="footer__container1__subcontainer1">
+                <div class="footer__container1__subcontainer1__header">
+                    <h1>H</h1>
+                    <img src="src/assets/icons/logo.svg" alt="Hotel name" />
+                </div>
+                <p class="footer__container1__subcontainer1__description">
+                    Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
+                    eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+                </p>
+                <div class="footer__container1__subcontainer1__icons">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="src/assets/icons/facebook.svg" alt="Logo"  />
+                    </a>
+                    <svg width="24" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21 24H3C1.344 24 0 22.656 0 21V3C0 1.344 1.344 0 3 0H21C22.656 0 24 1.344 24 3V21C24 22.656 22.656 24 21 24ZM9.216 18.096C14.874 18.096 17.97 13.404 17.97 9.342C17.97 9.21 17.97 9.078 17.964 8.946C18.564 8.514 19.086 7.968 19.5 7.35C18.948 7.596 18.354 7.758 17.73 7.836C18.366 7.458 18.852 6.852 19.086 6.132C18.492 6.486 17.832 6.738 17.13 6.876C16.566 6.276 15.768 5.904 14.886 5.904C13.188 5.904 11.808 7.284 11.808 8.982C11.808 9.222 11.838 9.456 11.886 9.684C9.33 9.558 7.062 8.328 5.544 6.468C5.28 6.924 5.13 7.452 5.13 8.016C5.13 9.084 5.676 10.026 6.498 10.578C5.994 10.56 5.52 10.422 5.106 10.194V10.236C5.106 11.724 6.168 12.972 7.572 13.254C7.314 13.326 7.044 13.362 6.762 13.362C6.564 13.362 6.372 13.344 6.186 13.308C6.576 14.532 7.716 15.42 9.06 15.444C8.004 16.272 6.678 16.764 5.238 16.764C4.992 16.764 4.746 16.752 4.506 16.722C5.862 17.586 7.482 18.096 9.216 18.096Z"
+                            fill="#777777" />
+                    </svg>
+                    <a href="https://www.behance.net/" target="_blank">
+                        <img src="src/assets/icons/behance.svg" alt="Logo"  />
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="src/assets/icons/linkedin.svg" alt="Logo"  />
+                    </a>
+                    
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="src/assets/icons/youtube.svg" alt="Logo"  />
+                    </a>
+                </div>
             </div>
-            <div class="footer__contact">
-                <img src="images/linkedin.png" alt="link">
-                <h2 class="footer__contact--title black">Linkedin
-                    <span>www.linkedin.com/in/danipoav</span>
-                </h2>
+            <div class="footer__container1__subcontainer2">
+                <h2 class="footer__container1__subcontainer2__title">Services.</h2>
+                <div class="footer__container1__subcontainer2__services">
+                    <div class="footer__container1__subcontainer2__services__1">
+                        <p class="footer__container1__subcontainer2__services__1--p">
+                            + Restaurant & Bar
+                        </p>
+                        <p class="footer__container1__subcontainer2__services__1--p">
+                            + Swimming Pool
+                        </p>
+                        <p class="footer__container1__subcontainer2__services__1--p">
+                            + Wellness & Spa
+                        </p>
+                        <p class="footer__container1__subcontainer2__services__1--p">
+                            + Restaurant
+                        </p>
+                        <p class="footer__container1__subcontainer2__services__1--p">
+                            + Conference Room
+                        </p>
+                        <p class="footer__container1__subcontainer2__services__1--p">
+                            + Cocktail Party House
+                        </p>
+                    </div>
+                    <div class="footer__container1__subcontainer2__services__2">
+                        <p class="footer__container1__subcontainer2__services__2--p">
+                            + Gaming Zone
+                        </p>
+
+                        <p class="footer__container1__subcontainer2__services__2--p">
+                            + Marriage Party
+                        </p>
+
+                        <p class="footer__container1__subcontainer2__services__2--p">
+                            + Party Planning
+                        </p>
+
+                        <p class="footer__container1__subcontainer2__services__2--p">
+                            + Tour Consultancy
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="footer__contact">
-                <img src="images/github_3291695.png" alt="git">
-                <h2 class="footer__contact--title black">GitHub
-                    <span>https://github.com/danipoav</span>
-                </h2>
+            <div class="footer__container1__subcontainer3">
+                <h2 class="footer__container1__subcontainer3__title">Contact Us.</h2>
+                <div class="footer__container1__subcontainer3__contact">
+                    <div class="footer__container1__subcontainer3__contact__one">
+                        <img class="footer__container1__subcontainer3__contact__one__icon"
+                            src="src/assets/icons/phone.svg" alt="Contact icon" />
+                        <div class="footer__container1__subcontainer3__contact__one__data">
+                            <p class="footer__container1__subcontainer3__contact__one__data__title">
+                                Phone Number
+                            </p>
+                            <p class="footer__container1__subcontainer3__contact__one__data__number">
+                                +987 876 765 76 577
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__container1__subcontainer3__contact__one">
+                        <img class="footer__container1__subcontainer3__contact__one__icon"
+                            src="src/assets/icons/mail.svg" alt="Contact icon" />
+                        <div class="footer__container1__subcontainer3__contact__one__data">
+                            <p class="footer__container1__subcontainer3__contact__one__data__title">
+                                Mail
+                            </p>
+                            <p class="footer__container1__subcontainer3__contact__one__data__number">
+                                miranda@hotel.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__container1__subcontainer3__contact__one">
+                        <img class="footer__container1__subcontainer3__contact__one__icon"
+                            src="src/assets/icons/location.svg" alt="Contact icon" />
+                        <div class="footer__container1__subcontainer3__contact__one__data">
+                            <p class="footer__container1__subcontainer3__contact__one__data__title">
+                                Our Location
+                            </p>
+                            <p class="footer__container1__subcontainer3__contact__one__data__number">
+                                Madrid, Spain
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__container2">
+            <div>
+                <p class="footer__container2__copyright">
+                    Copyright by Miguel Covarrubias -2024
+                </p>
+            </div>
+            <div class="footer__container2__links">
+                <a href="#">Termns of use | </a>
+                <a href="#">Privacy Environmental Policy</a>
             </div>
         </div>
     </footer>
 
-    <div class="footer__nav">
-        <h1>Copiright By@danipoav - 2024</h1>
-        <h1>Terms of use | Privacy Environmental Policy</h1>
-    </div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="src/js/scripts.js"> </script>
+    
 </body>
 
 </html>
